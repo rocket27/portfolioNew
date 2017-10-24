@@ -1,0 +1,9 @@
+.hero {
+  height: 600px;
+  background: url('../img/bg/headerBg.jpg') no-repeat top center;
+  overflow: hidden;
+  position: relative;
+  &__title {
+    @include centered(y);
+  }
+}

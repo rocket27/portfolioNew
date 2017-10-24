@@ -1,5 +1,8 @@
-body {
-  margin: 0;
-}
+// Layout settings
+@import 'common/fonts.scss';
+@import 'common/variables.scss';
+@import 'common/mixins.scss';
+@import 'common/globalSettings.scss';
 
-@import 'common/greating';
+// Modules
+@import 'modules/about.scss';

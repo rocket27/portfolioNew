@@ -12,6 +12,7 @@ global.$ = {
   gulp: require('gulp'),
   del: require('del'),
   browserSync: require('browser-sync').create(),
+  sassGlob: require('gulp-sass-glob'),
   gp: require('gulp-load-plugins')()
 };
 

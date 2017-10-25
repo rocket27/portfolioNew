@@ -1,9 +1,24 @@
-.hero {
-  height: 600px;
-  background: url('../img/bg/headerBg.jpg') no-repeat top center;
-  overflow: hidden;
-  position: relative;
-  &__title {
-    @include centered(y);
+.about {
+  display: flex;
+  // margin-top: -160px;
+  &__column {
+    width: 50%;
+    position: relative;
+    &_left {
+      background-color: $white;
+    }
+    &_right {
+      background-color: $beige;
+    }
+  }
+  &__triangle {
+    position: absolute;
+    bottom: 100%;
+    &_fillWhite {
+      fill: $white;  
+    }
+    &_fillBeige {
+      fill: $beige;      
+    }
   }
 }

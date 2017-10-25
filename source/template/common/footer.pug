@@ -1,0 +1,11 @@
+footer.footer
+  .footer__row
+    nav.footer__nav
+      ul.menu
+        each item in['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
+          li.menu__item
+            a(class="menu__link" href="#")= item
+    include ../common/socials
+  .footer__row
+    .footer__userAbout Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+    .copyright © Владимир Астахов | Создано с любовью в LoftSchool | 2017

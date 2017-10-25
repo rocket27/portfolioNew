@@ -1,0 +1,26 @@
+.footer {
+  height: 147px;
+  background-color: rgba(55, 62, 66, .85);
+  &__row {
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    &:first-child {
+      box-sizing: content-box;
+      border-bottom: 1px solid rgba(73, 79, 83, .85); 
+    } 
+  }
+  &__userAbout {
+    width: 500px;
+  }
+}
+
+.menu {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "robotoMedium";
+  color: $snowWhite;
+}

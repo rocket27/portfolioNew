@@ -6,9 +6,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: $lightGray;
     padding: 0 30px;
     &:first-child {
-      box-sizing: content-box;
       border-bottom: 1px solid rgba(73, 79, 83, .85); 
     } 
   }
@@ -23,4 +23,10 @@
   justify-content: space-between;
   font-family: "robotoMedium";
   color: $snowWhite;
+  &__link {
+    transition: color .75s;
+    &:hover {
+      color: $green;
+    }
+  }
 }

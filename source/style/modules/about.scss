@@ -1,6 +1,5 @@
 .about {
   display: flex;
-  // margin-top: -160px;
   &__column {
     width: 50%;
     position: relative;
@@ -9,6 +8,15 @@
     }
     &_right {
       background-color: $beige;
+    }
+  }
+  &__columnContent {
+    max-width: 900px;
+    &_left {
+      margin-left: auto;
+    }
+    &_right {
+      margin-right: auto;
     }
   }
   &__triangle {
@@ -20,5 +28,8 @@
     &_fillBeige {
       fill: $beige;      
     }
+  }
+  &__containerColumn {
+    max-width: 900px;
   }
 }

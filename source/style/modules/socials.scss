@@ -1,11 +1,26 @@
 .socials {
   display: flex;
   justify-content: space-between;
+  &_hero {
+    width: 140px;
+    position: absolute;
+    top: 28px;
+    left: 30px;
+  }
   &_footer {
     width: 128px;
   }
   &__icon {
     display: block;
+    &_hero {
+      @include iconSize(30px, 22px);
+      fill: $snowWhite;
+      opacity: .5;
+      transition: opacity .75s;
+      &:hover {
+        opacity: 1;
+      }
+    }
     &_footer {
       @include iconSize(36px, 36px);
       fill: #9b9fa1;

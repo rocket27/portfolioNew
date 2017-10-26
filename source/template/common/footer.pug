@@ -5,7 +5,13 @@ footer.footer
         each item in['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
           li.menu__item
             a(class="menu__link" href="#")= item
-    include ../common/socials
+    ul.socials.socials_footer
+      - icons = ['vk_round', 'github_round', 'in_round']
+      each icon in icons
+        li.socials__item
+          a(class="socials__link" href="#")
+            svg.socials__icon.socials__icon_footer
+              use(xlink:href=`assets/img/sprite.svg#${icon}`)
   .footer__row
     .footer__userAbout Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
     .copyright © Владимир Астахов | Создано с любовью в LoftSchool | 2017

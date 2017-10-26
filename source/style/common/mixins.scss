@@ -25,3 +25,8 @@
     transform: translateY(-50%);
   }
 }
+
+@mixin iconSize($w, $h) {
+  width: $w;
+  height: $h;
+}

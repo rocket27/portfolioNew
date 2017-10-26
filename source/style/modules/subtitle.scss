@@ -1,0 +1,9 @@
+.subtitle {
+  font-family: 'bernierRegular';
+  font-size: 35px;
+  text-align: center;
+  color: $gray;
+  &_contacts {
+    color: $darkGray;
+  }
+}

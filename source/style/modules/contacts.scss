@@ -1,0 +1,28 @@
+.contacts {
+  width: 380px;
+  height: 290px;
+  background-color: rgba(252, 252, 252, .85);
+  border-radius: 5px;
+  @include centered();
+  padding: 30px 40px;
+  &__list {
+    font-family: 'robotoMedium';
+    color: $gray;
+    margin-top: 20px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__link {
+    display: inline-block;
+  }
+  &__icon {
+    @include iconSize(24px, 24px);
+    fill: $green;
+    margin-right: 10px;
+  }
+  &__text {
+  }
+}

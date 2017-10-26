@@ -1,4 +1,4 @@
-extends ../_template
+extends ../templateAbout
 
 block variables
   - var title = 'About page'
@@ -35,6 +35,17 @@ block content
                     .skillSection__title= skill
                     ul.skillSection__list 
     section.section.map
-      .mapContainer
+      .mapContainer(id="map")
       .contacts
+        .subtitle.subtitle_contacts Контакты
+        ul.contacts__list
+          - var contacts = ['skype_kdn', 'astahov@gmail.com', '+7 931 200 93 24', 'г.Новосибирск, ул. Инская, д. 5']
+          each i in contacts
+            - var idBox = ['skypeContacts', 'envelopeContacts', 'phoneContacts', 'mapMarker']
+            each j in idBox
+              li.contacts__item
+                a.contacts__link(href="#")
+                  svg.contacts__icon
+                    use(xlink:href=`assets/img/sprite.svg#${j}`)
+                  span.contacts__text= i
   include ../common/footer  

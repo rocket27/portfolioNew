@@ -1,3 +1,18 @@
 .socials {
   display: flex;
+  justify-content: space-between;
+  &_footer {
+    width: 128px;
+  }
+  &__icon {
+    display: block;
+    &_footer {
+      @include iconSize(36px, 36px);
+      fill: #9b9fa1;
+      transition: fill .75s;
+      &:hover {
+        fill: #fff;
+      }
+    }
+  }
 }

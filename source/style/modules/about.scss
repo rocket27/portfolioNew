@@ -2,6 +2,7 @@
   display: flex;
   &__column {
     width: 50%;
+    padding-bottom: 70px;  
     position: relative;
     &_left {
       background-color: $white;
@@ -13,6 +14,9 @@
   &__columnContent {
     max-width: 900px;
     &_left {
+      display: flex;
+      text-align: center;
+      padding: 0 20px;
       margin-left: auto;
     }
     &_right {
@@ -29,7 +33,11 @@
       fill: $beige;      
     }
   }
-  &__containerColumn {
-    max-width: 900px;
+  &__sectionTitle {
+    width: 416px;
+  }
+  &__SectionTitleBg {
+    width: 357px;
+    height: 125px;
   }
 }

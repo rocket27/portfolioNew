@@ -1,0 +1,16 @@
+.sectionTitle {
+  font-size: 63px;
+  color: $darkGray;
+  position: relative;
+  &__bg {
+    display: block;
+    fill: rgba($titleBg, .07);
+  }
+  &__inner {
+    @extend %heading;
+    @include centered();
+  }
+  &_about {
+
+  }
+}

@@ -1,0 +1,19 @@
+.userAbout {
+  width: 444px;
+  &__picture {
+    display: inline-block;
+    width: 444px;
+    height: 390px;
+    overflow: hidden;
+    position: relative;
+  }
+  &__image {
+    @include centered(x);
+  }
+  &__title {
+    // text-align: center;
+  }
+  &__text {
+    text-align: left;
+  }
+}

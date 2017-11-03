@@ -2,10 +2,10 @@
 
 module.exports = function() {
   $.gulp.task('js:process', function() {
-    return $.gulp.src($.path.app)
+    return $.gulp.src($.path.jsModules)
       .pipe($.gp.sourcemaps.init())
-      .pipe($.gp.concat('app.js'))
+      .pipe($.gp.concat('main.js'))
       .pipe($.gp.sourcemaps.write())
-      .pipe($.gulp.dest($.config.root + '/assets/js'))
+      .pipe($.gulp.dest($.config.root + '/js'))
   })
 };

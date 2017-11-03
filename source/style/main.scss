@@ -1,8 +1,8 @@
 // Layout settings
 @import 'common/fonts.scss';
 @import 'common/variables.scss';
-@import 'common/mixins.scss';
-@import 'common/globalSettings.scss';
+@import 'common/helpers.scss';
+@import 'common/global.scss';
 
 // Modules
 @import 'modules/**/*.scss';

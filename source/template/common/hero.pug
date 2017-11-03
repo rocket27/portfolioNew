@@ -1,6 +1,6 @@
 section.section.hero
   .hero__bg
-    img.hero__bgImage(src="assets/img/bg/aboutHeaderBg.jpg")
+    img.hero__bgImage(src="img/bg/aboutHeaderBg.jpg")
   .hero__container.container
     ul.socials.socials_hero
       - icons = ['vk', 'github', 'in']
@@ -8,19 +8,19 @@ section.section.hero
         li.socials__item
           a(class="socials__link" href="#")
             svg.socials__icon.socials__icon_hero
-              use(xlink:href=`assets/img/sprite.svg#${icon}`)
+              use(xlink:href=`img/sprite.svg#${icon}`)
     a.hamburger(href="#")
       svg.hamburger__icon
-        use(xlink:href="assets/img/sprite.svg#hamburger")
+        use(xlink:href="img/sprite.svg#hamburger")
     .hero__title
       //- ???????????? 
       svg.heroTitleImage
-        use(xlink:href="assets/img/sprite.svg#portfolioHeader")
+        use(xlink:href="img/sprite.svg#portfolioHeader")
       .user.hero__userBlock
         .user__imageContainer
-          img.user__image(src="assets/img/content/header/userAvatar.jpg")
+          img.user__image(src="img/content/header/userAvatar.jpg")
         .user__name Владимир Астахов
         .user__description Личный сайт веб разработчика
     a.downArrow(href="#")
       svg.downArrow__icon
-        use(xlink:href="assets/img/sprite.svg#arrowDown")
+        use(xlink:href="img/sprite.svg#arrowDown")

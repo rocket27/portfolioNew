@@ -7,12 +7,13 @@ global.$ = {
     task: require('./gulp/paths/tasks.js'),
     jsFoundation: require('./gulp/paths/js.foundation.js'),
     cssFoundation: require('./gulp/paths/css.foundation.js'),
-    app: require('./gulp/paths/app.js')
+    jsModules: require('./gulp/paths/source.js')
   },
   gulp: require('gulp'),
   del: require('del'),
   browserSync: require('browser-sync').create(),
   sassGlob: require('gulp-sass-glob'),
+  cssUnit: require('gulp-css-unit'),
   gp: require('gulp-load-plugins')()
 };
 
@@ -29,6 +30,7 @@ $.gulp.task('default', $.gulp.series(
     'js:process',
     'copy:image',
     'copy:fonts',
+    'copy:json',
     'css:foundation',
     'sprite:svg'
   ),

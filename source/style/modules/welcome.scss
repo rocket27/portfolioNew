@@ -1,0 +1,18 @@
+.welcome {
+  height: 100vh;
+  background: url('../../img/bg/welcomeSectionBg.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  &__contentBox {
+    width: 380px;
+    height: 395px;
+    @extend %blankLayout;
+    color: $gray;
+    padding-top: 40px;
+  }
+  &__copyright {
+    color: $snowWhite;
+    @include centered(x);
+    bottom: 5%;
+  }
+}

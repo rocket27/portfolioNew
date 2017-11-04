@@ -1,7 +1,22 @@
 extends ../template
 
 block variables
-  - var title = 'Home page'
+  - var title = 'Владимир Астахов | Home'
+  - var userAdditionalClass = 'welcome__userBlock'
+  - var socialsAdditionalClass = 'socials_welcome'
+  - var copyrightAdditionalClass = 'welcome__copyright'
 
 block content
-  a.aboutLink(href="about.html") About
+  .wrapper
+    section.section.welcome
+      a.welcome__button.authorization Авторизоваться
+      .welcome__contentBox
+        include ../common/user
+        include ../common/socials
+        nav.welcomeNav
+          ul.welcomeNav__list
+            each item in ["Мои работы", "Обо мне", "Блог"]
+              li.welcomeNav__item
+                a.welcomeNav__link(href="#")= item
+      include ../common/copyright
+      a(href="about.html") about

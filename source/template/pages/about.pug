@@ -35,11 +35,15 @@ block content
                 p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
             .aboutData__content
               ul.skills
-                each skill in ['Frontend', 'Backend', 'WorkFlow']
-                  li.skills__item
-                    .skillSection
-                      .skillSection__title= skill
-                      ul.skillSection__list
+                each skillsObject in skills
+                  each skillsArray, skillsArrayName in skillsObject
+                    li.skills__item
+                      .skillSection
+                        .skillSection__title= skillsArrayName
+                        ul.skillSection__list
+                          each skill in skillsArray
+                            li.skillSection__item
+                              .skillSection__name= skill
     section.section.map
       .mapContainer(id="map")
       include ../common/contacts

@@ -1,0 +1,9 @@
+.hamburger {
+  position: absolute;
+  top: 28px;
+  right: 30px;
+  &__icon {
+    @include iconSize(40px, 35px);
+    fill: $snowWhite;
+  }
+}

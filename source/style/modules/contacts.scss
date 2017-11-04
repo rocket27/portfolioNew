@@ -1,9 +1,7 @@
 .contacts {
   width: 380px;
   height: 290px;
-  background-color: rgba(252, 252, 252, .85);
-  border-radius: 5px;
-  @include centered();
+  @extend %blankLayout;
   padding: 30px 40px;
   &__list {
     font-family: 'robotoMedium';

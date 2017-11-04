@@ -1,26 +1,17 @@
+- var userAdditionalClass = 'hero__userBlock'
+- var socialsAdditionalClass = 'socials_hero'
+
 section.section.hero
   .hero__bg
     img.hero__bgImage(src="img/bg/aboutHeaderBg.jpg")
   .hero__container.container
-    ul.socials.socials_hero
-      - icons = ['vk', 'github', 'in']
-      each icon in icons
-        li.socials__item
-          a(class="socials__link" href="#")
-            svg.socials__icon.socials__icon_hero
-              use(xlink:href=`img/sprite.svg#${icon}`)
+    include socials
     a.hamburger(href="#")
       svg.hamburger__icon
         use(xlink:href="img/sprite.svg#hamburger")
-    .hero__title
-      //- ???????????? 
-      svg.heroTitleImage
-        use(xlink:href="img/sprite.svg#portfolioHeader")
-      .user.hero__userBlock
-        .user__imageContainer
-          img.user__image(src="img/content/header/userAvatar.jpg")
-        .user__name Владимир Астахов
-        .user__description Личный сайт веб разработчика
+    svg.hero__titleBg
+      use(xlink:href="img/sprite.svg#portfolioHeader")
+    include user
     a.downArrow(href="#")
       svg.downArrow__icon
         use(xlink:href="img/sprite.svg#arrowDown")

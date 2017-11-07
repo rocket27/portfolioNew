@@ -1,0 +1,13 @@
+.contentBox {
+  width: 380px;
+  height: 395px;
+  border-radius: $borderRadius;
+  overflow: hidden;
+  @include centered();
+  &__info {
+    height: 350px;
+    background-color: $board;
+    color: $gray;
+    padding-top: 40px;
+  }
+}

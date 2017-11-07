@@ -41,13 +41,6 @@
   }
 }
 
-%blankLayout {
-  background-color: $blankLayout;
-  border-radius: 5px;
-  @include centered();
-  overflow: hidden;
-}
-
 @mixin iconSize($w, $h) {
   width: $w;
   height: $h;

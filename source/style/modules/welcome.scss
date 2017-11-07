@@ -3,16 +3,24 @@
   background: url('../../img/bg/welcomeSectionBg.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
-  &__contentBox {
-    width: 380px;
-    height: 395px;
-    @extend %blankLayout;
-    color: $gray;
-    padding-top: 40px;
+  &__socials {
+    margin: 30px auto;
   }
   &__copyright {
     color: $snowWhite;
     @include centered(x);
     bottom: 5%;
+  }
+}
+
+.socials_welcome {
+  .socials__icon {
+    fill: $green;
+  }
+}
+
+.user_welcome {
+  .user__name {
+    font-size: 28px;
   }
 }

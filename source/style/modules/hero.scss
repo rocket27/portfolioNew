@@ -29,3 +29,15 @@
     @include centered();
   }
 }
+
+.socials_hero {
+  .socials__icon {
+    fill: $snowWhite;
+  }
+}
+
+.user_hero {
+  .user__name {
+    font-size: 35px;    
+  }
+}

@@ -12,15 +12,13 @@
   }
   &__icon {
     display: block;
-    &_hero {
-      @include iconSize(30px, 22px);
-      fill: $snowWhite;
-      opacity: .5;
-      transition: opacity .75s;
-      &:hover {
-        opacity: 1;
-      }
+    @include iconSize(30px, 22px);
+    opacity: .5;
+    transition: opacity .75s;
+    &:hover {
+      opacity: 1;
     }
+
     &_footer {
       @include iconSize(36px, 36px);
       fill: #9b9fa1;

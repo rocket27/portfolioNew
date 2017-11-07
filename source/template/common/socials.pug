@@ -1,6 +1,6 @@
-ul.socials(class= socialsAdditionalClass)
+ul.socials(class= socialsElement class=socialsModifier)
   each icon in socialsIcons
     li.socials__item
       a.socials__link(href="#")
-        svg.socials__icon.socials__icon_hero
+        svg.socials__icon
           use(xlink:href=`img/sprite.svg#${icon}`)

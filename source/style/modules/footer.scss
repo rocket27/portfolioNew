@@ -16,17 +16,3 @@
     width: 500px;
   }
 }
-
-.menu {
-  width: 400px;
-  display: flex;
-  justify-content: space-between;
-  font-family: "robotoMedium";
-  color: $snowWhite;
-  &__link {
-    transition: color .75s;
-    &:hover {
-      color: $green;
-    }
-  }
-}

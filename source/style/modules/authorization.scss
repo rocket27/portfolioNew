@@ -1,0 +1,19 @@
+.authorization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 45px;
+  font-family: 'robotoMedium';
+  color: $snowWhite;
+  border: 1px solid $snowWhite;
+  border-radius: $borderRadius;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  transition: all .75s;
+  &:hover {
+    color: $green;
+    background-color: $snowWhite;
+  }
+}

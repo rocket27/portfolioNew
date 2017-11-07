@@ -2,21 +2,23 @@ extends ../template
 
 block variables
   - var title = 'Владимир Астахов | Home'
-  - var userAdditionalClass = 'welcome__userBlock'
-  - var socialsAdditionalClass = 'socials_welcome'
+  - var userElement = 'welcome__userBlock'
+  - var userModifier = 'user_welcome'
+  - var socialsElement = 'welcome__socials'
+  - var socialsModifier = 'socials_welcome'
   - var copyrightAdditionalClass = 'welcome__copyright'
 
 block content
   .wrapper
     section.section.welcome
-      a.welcome__button.authorization Авторизоваться
-      .welcome__contentBox
-        include ../common/user
-        include ../common/socials
-        nav.welcomeNav
-          ul.welcomeNav__list
+      a.welcome__button.authorization(href="#") Авторизоваться
+      .contentBox
+        .contentBox__info
+          include ../common/user
+          include ../common/socials
+        nav.nav.welcome__nav
+          ul.nav__list
             each item in ["Мои работы", "Обо мне", "Блог"]
-              li.welcomeNav__item
-                a.welcomeNav__link(href="#")= item
+              li.nav__item
+                a.nav__link(href="about.html")= item
       include ../common/copyright
-      a(href="about.html") about

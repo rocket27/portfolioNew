@@ -1,3 +1,4 @@
+// Fonts
 $primaryFont: 16px / 1.42 "robotoRegular", Arial, sans-serif;
 
 // Colors
@@ -6,8 +7,14 @@ $white: #efeee9;
 $beige: #eeebdf;
 $lightBeige: #f9f8f0;
 $green: #00bfa5;
+$darkGreen: #009688;
+$greenTransparent: rgba(#00bfa5, .85);
+$darkGreenTransparent: rgba(#009688, .85);
 $lightGray: #aeb0b1;
 $gray: #455a64;
 $darkGray: #373e42;
 $titleBg: #6d7070;
-$blankLayout: rgba(252, 252, 252, .85);
+$board: rgba(252, 252, 252, .85);
+
+// Others
+$borderRadius: 5px;

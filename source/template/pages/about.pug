@@ -1,7 +1,7 @@
 extends ../templateAbout
 
 block variables
-  - var title = 'About page'
+  - var title = 'About | Vladimir Astachov'
 
 block content
   .wrapper
@@ -9,7 +9,7 @@ block content
     section.section.about
       .about__column.about__column_left
         svg(viewbox="0 0 900 160" preserveAspectRatio="none").about__triangle.about__triangle_fillWhite
-          polygon(points="0,0 0,160 900, 160")
+          polygon(points = "0, 0 0, 160 900, 160")
         .about__columnContent.about__columnContent_left
           h4.sectionTitle.about__sectionTitle
             svg.sectionTitle__bg.about__sectionTitleBg
@@ -43,6 +43,9 @@ block content
                         ul.skillSection__list
                           each skill in skillsArray
                             li.skillSection__item
+                              svg.circle(viewbox="0 0 110 110")
+                                circle.circle__first(r="45" cx="50%" cy="50%")
+                                circle.circle__second.circle15(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
                               .skillSection__name= skill
     section.section.map
       .mapContainer(id="map")

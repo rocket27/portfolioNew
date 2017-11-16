@@ -1,6 +1,6 @@
 .welcome {
   height: 100vh;
-  background: url('../../img/bg/welcomeSectionBg.jpg') no-repeat center center;
+  background: $background;
   background-size: cover;
   position: relative;
   &__socials {

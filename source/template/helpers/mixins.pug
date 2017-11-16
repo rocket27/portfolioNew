@@ -1,0 +1,17 @@
+mixin user (element, modifier)
+  .user(class= element class= modifier)
+    .user__imageContainer
+      img.user__image(src="img/content/header/userAvatar.jpg")
+    .user__name Владимир Астахов
+    .user__description Личный сайт веб разработчика
+
+mixin socials (element, modifier)
+  ul.socials(class= element class= modifier)
+    each icon in socialsIcons
+      li.socials__item
+        a.socials__link(href="#")
+          svg.socials__icon
+            use(xlink:href=`img/sprite.svg#${icon}`)
+
+mixin copyright (additionalClass)
+  .copyright(class= additionalClass) © Владимир Астахов | Создано с любовью в LoftSchool | 2017

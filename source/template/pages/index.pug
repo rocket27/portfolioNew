@@ -1,24 +1,19 @@
 extends ../template
 
 block variables
-  - var title = 'Владимир Астахов | Home'
-  - var userElement = 'welcome__userBlock'
-  - var userModifier = 'user_welcome'
-  - var socialsElement = 'welcome__socials'
-  - var socialsModifier = 'socials_welcome'
-  - var copyrightAdditionalClass = 'welcome__copyright'
+  - var title = 'Home | Vladimir Astachov'
 
 block content
   .wrapper
     section.section.welcome
-      a.welcome__button.authorization(href="#") Авторизоваться
+      a.welcome__button.authorization(href="login.html") Авторизоваться
       .contentBox
         .contentBox__info
-          include ../common/user
-          include ../common/socials
+          +user('welcome__userBlock', 'user_welcome')
+          +socials('welcome__socials', 'socials_welcome')
         nav.nav.welcome__nav
           ul.nav__list
             each item in ["Мои работы", "Обо мне", "Блог"]
               li.nav__item
                 a.nav__link(href="about.html")= item
-      include ../common/copyright
+      +copyright('welcome__copyright')

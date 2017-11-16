@@ -1,0 +1,46 @@
+.skillSection {
+  font-family: 'robotoMedium';
+  &__title {   
+    font-size: 28px;
+    color: $gray;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    display: block;
+    width: 120px;
+    height: 120px;
+    // flex: 1;
+    position: relative;
+  }
+  &__name {
+    font-size: 14px;
+    color: $green;
+    text-align: center;
+    position: absolute;
+    @include centered();
+  }
+}
+
+
+
+
+.circle {
+  display: block;
+  fill: none;
+  stroke-width: 20;
+  &__first {
+    stroke: #dfdcd5;
+    fill: none;
+  }
+  &__second {
+    stroke: $green;
+    stroke-dasharray: .0010 282.6;
+    transition: all .75s;
+  }
+  &:hover .circle15 {
+    stroke-dasharray: 42.39 282.6;
+  }
+}

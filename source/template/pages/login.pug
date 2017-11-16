@@ -1,0 +1,16 @@
+extends ../template
+
+block variables
+  - var title = 'Login | Vladimir Astachov'
+
+block content
+  .wrapper
+    .section.login
+      .contentBox
+        .contentBox__info
+        nav.nav.welcome__nav
+          ul.nav__list
+            each item in ["На главную", "Войти"]
+              li.nav__item
+                a.nav__link(href="about.html")= item
+      +copyright('welcome__copyright')

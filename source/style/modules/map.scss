@@ -1,7 +1,9 @@
 .map {
-  position: relative;  
+  position: relative;
+  background: url('../../img/bg/mapBg.jpg') center center;
+  background-size: cover;  
 }
 
 #map {
-  height: 927px;
+  height: 1080px;
 }

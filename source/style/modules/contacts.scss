@@ -6,6 +6,9 @@
   @include centered();
   overflow: hidden;
   padding: 30px 40px;
+  &__title {
+    text-align: center;
+  }
   &__list {
     font-family: 'robotoMedium';
     color: $gray;

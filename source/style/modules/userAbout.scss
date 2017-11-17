@@ -1,17 +1,19 @@
 .userAbout {
   width: 444px;
+  padding-top: 20px;
   &__picture {
     display: inline-block;
     width: 444px;
     height: 390px;
     overflow: hidden;
     position: relative;
+    margin-bottom: 30px;
   }
   &__image {
     @include centered(x);
   }
   &__title {
-    // text-align: center;
+    margin-bottom: 20px;
   }
   &__text {
     text-align: left;

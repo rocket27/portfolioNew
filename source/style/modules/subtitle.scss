@@ -1,6 +1,7 @@
 .subtitle {
   @extend %heading;
   font-size: 35px;
+  line-height: 41px;
   &_contacts {
     color: $darkGray;
   }

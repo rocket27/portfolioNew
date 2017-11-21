@@ -20,5 +20,17 @@
     {
       "link1" : ["mailto:astahov@gmail.com", "envelopeContacts", "astahov@gmail.com"]
     }
+  ],
+
+  "prllxLayers" : [
+    "prllxLayer01.png",
+    "prllxLayer02.png",
+    "prllxLayer03_cloud01.png",
+    "prllxLayer04.png",
+    "prllxLayer05.png",
+    "prllxLayer06_cloud02.png",
+    "prllxLayer07.png",
+    "prllxLayer08.png",
+    "prllxLayer09_cloud03.png"
   ]
 }

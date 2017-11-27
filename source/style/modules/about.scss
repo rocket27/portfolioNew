@@ -34,6 +34,9 @@
       fill: $beige;      
     }
   }
+  &__title {
+    position: relative;
+  }
   &__sectionTitle {
     width: 416px;
   }

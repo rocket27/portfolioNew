@@ -8,16 +8,32 @@
   background: url('../../img/parallax/parallaxBg.jpg') no-repeat top center;
   background-size: cover;
   &__layer {
-    // width: 4000px;
-    // height: 2658px;
-    width: 2000px;
-    height: 1329px;
+    width: 4000px;
+    height: 2658px;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -1000px;    
-    margin-top: -665px;
+    margin-left: -2000px;
+    margin-top: -1329px;
+    @include desktopMax {
+      width: 2600px;
+      height: 1728px;
+      margin-left: -1300px;
+      margin-top: -864px;
+    }
+    @include desktop {
+      width: 2000px;
+      height: 1328px;
+      margin-left: -1000px;
+      margin-top: -664px;
+    }
+    @include laptopMax {
+      width: 1600px;
+      height: 1064px;
+      margin-left: -800px;
+      margin-top: -532px;
+    }
   }
   &__image {
     max-width: 100%;

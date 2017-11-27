@@ -11,10 +11,8 @@ block content
         svg(viewbox="0 0 900 160" preserveAspectRatio="none").about__triangle.about__triangle_fillWhite
           polygon(points = "0, 0 0, 160 900, 160")
         .about__columnContent.about__columnContent_left
-          h4.sectionTitle.about__sectionTitle
-            svg.sectionTitle__bg.about__sectionTitleBg
-              use(xlink:href="img/sprite.svg#titleBg_about")
-            .sectionTitle__inner Обо мне
+          .about__title
+            +title('about__sectionTitle', 'titleAboutBg', 'Обо мне')
           .userAbout
             .userAbout__picture
               img.userAbout__image(src="img/content/about/userPhoto.jpg")

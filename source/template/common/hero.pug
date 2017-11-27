@@ -6,9 +6,24 @@ section.section.hero
     a.hamburger(href="#")
       svg.hamburger__icon
         use(xlink:href="img/sprite.svg#hamburger")
-    svg.hero__titleBg
-      use(xlink:href="img/sprite.svg#portfolioHeader")
-    +user('hero__userBlock', 'user_hero')
+    .hero__content    
+      svg.hero__titleBg
+        use(xlink:href="img/sprite.svg#portfolioHeader")
+      +user('hero__userBlock', 'user_hero')
+    a.downArrow(href="#")
+      svg.downArrow__icon
+        use(xlink:href="img/sprite.svg#arrowDown")
+//- section.section.hero
+  .hero__bg
+    img.hero__bgImage(src="img/bg/aboutHeaderBg.jpg")
+  svg.hero__titleBg
+    use(xlink:href="img/sprite.svg#portfolioHeader")
+  +user('hero__userBlock', 'user_hero')
+  .hero__container.container
+    +socials('hero__socials', 'socials_hero')
+    a.hamburger(href="#")
+      svg.hamburger__icon
+        use(xlink:href="img/sprite.svg#hamburger")
     a.downArrow(href="#")
       svg.downArrow__icon
         use(xlink:href="img/sprite.svg#arrowDown")

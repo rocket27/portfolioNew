@@ -1,6 +1,6 @@
 .hero {
-  height: 600px;
-  // height: 100vh;
+  height: 100vh;
+  min-height: 650px;
   color: $snowWhite;  
   overflow: hidden;
   position: relative;
@@ -16,17 +16,42 @@
     height: auto;
   }
   &__container {
-    padding: 28px 30px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // padding: 28px 30px;
+  }
+  &__content {
+    width: 100%;
+    @include centered(y);
   }
   &__titleBg {
+    display: block;
     width: 1176px;
     height: 313px;
-    @include centered();
+    // @include centered(y);
     fill: rgba(#fdfdfd, .1);
+    margin: 0 auto;
+
+    // margin: 0 auto;
+    // max-height: 19.5625rem;
+    // max-width: 1176px;
+    // opacity: .06;
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // top: -0.625rem;
+    // width: 100%;
+    // fill: #fff;
   }
   &__userBlock {
-    @include centered();
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    // padding-top: 40px;
+    // @include centered(y);
   }
 }
 

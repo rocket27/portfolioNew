@@ -2,15 +2,18 @@
   font-size: 63px;
   color: $darkGray;
   position: relative;
+  padding: 0 40px;
   &__bg {
     display: block;
+    width: 100%;
     fill: rgba($titleBg, .07);
   }
   &__inner {
+    display: inline-block;
     @extend %heading;
     @include centered();
   }
   // &_about {
-
+    // titleAboutBg
   // }
 }

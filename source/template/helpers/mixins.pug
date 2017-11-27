@@ -1,3 +1,9 @@
+mixin title (additionalClass, background, content)
+  .sectionTitle(class= additionalClass)
+    svg.sectionTitle__bg
+      use(xlink:href=`img/sprite.svg#${background}`)
+    .sectionTitle__inner= content
+
 mixin user (element, modifier)
   .user(class= element class= modifier)
     .user__imageContainer
@@ -15,3 +21,11 @@ mixin socials (element, modifier)
 
 mixin copyright (additionalClass)
   .copyright(class= additionalClass) © Владимир Астахов | Создано с любовью в LoftSchool | 2017
+
+mixin triangleLeft (element, modifier)
+  svg(viewbox="0 0 900 160" preserveAspectRatio="none" class= element class= modifier)
+    polygon(points = "0, 0 0, 160 900, 160")
+
+mixin triangleRight (element, modifier)
+  svg(viewbox="0 0 900 160" preserveAspectRatio="none" class= element class= modifier)
+    polygon(points="0, 160 900, 160 900, 0")

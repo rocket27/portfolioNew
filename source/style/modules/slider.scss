@@ -1,0 +1,88 @@
+.slider {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-flow: column wrap;
+  &__description, &__picture, &__buttons {
+    width: 50%;    
+  }
+  &__description {
+    height: 100%;
+    display: flex;
+    background-color: $silver;
+  }
+  &__infoBlock {
+    width: 420px;
+    text-align: center;
+    margin: auto;
+  }
+  &__projectName {
+    margin-bottom: 20px;
+  }
+  &__technology {
+    height: 53px;
+    font-family: "robotoMedium";
+    line-height: 51px;
+    color: $green;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid $green;
+    border-bottom: 1px solid $green;
+    margin-bottom: 40px;
+  }
+  &__projectLink {
+    display: inline-block;
+    width: 200px;
+    height: 45px;
+    font-family: "robotoMedium";
+    line-height: 45px;
+    color: $snowWhite;
+    background-color: $green;
+    border-radius: 5px;
+  }
+  &__picture {
+    flex: 3;
+    // display: flex;
+    background-color: $darkBeige;
+  }
+  &__image {
+    display: block;
+    margin: auto;
+  }
+  &__buttons {
+    flex: 1;
+    display: flex;
+    background-color: $lightBeige;
+  }
+  &__button {
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #b6b4ae;
+      opacity: .7;
+      transition: opacity .75s;
+    }
+  }
+  &__buttonIcon {
+    z-index: 1;
+    @include iconSize(43px, 27px);
+    @include centered();
+    fill: $snowWhite;
+  }
+}
+
+.slider__button:hover.slider__button::after {
+  opacity: 0;
+}

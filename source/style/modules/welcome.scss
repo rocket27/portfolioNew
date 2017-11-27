@@ -3,6 +3,12 @@
   height: 100%;
   overflow: hidden;
   position: relative;
+  &__inner {
+    max-width: 1800px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
   &__socials {
     margin: 30px auto;
   }

@@ -1,0 +1,34 @@
+extends ../templateAbout
+
+block variables
+  - var title = 'About | Vladimir Astachov'
+
+block content
+  .wrapper
+    include ../common/hero
+    section.section.works
+      .works__triangleBlock
+        .works__triangle
+          +triangleLeft('works__triangle')
+        .works__triangle
+          +triangleRight('works__triangle')
+      .works__title
+        +title('works__sectionTitle', 'titleWorksBg', 'Мои работы')
+    section.section.slider
+      .slider__description
+        .slider__infoBlock
+          .subtitle.slider__projectName
+            | Сайт школы онлайн
+            br 
+            | образования
+          .slider__technology HTML, SCC, JavaScript
+          a.slider__projectLink(href="#") Посмотреть сайт
+      .slider__picture
+        img.slider__image(src="img/content/works/prjct_01.png")
+      .slider__buttons
+        a.slider__button(href="#" style="background-image: url('img/content/works/buttonImage_01.jpg')")
+          svg.slider__buttonIcon
+            use(xlink:href="img/sprite.svg#portfolioArrowDown")
+        a.slider__button(href="#" style="background-image: url('img/content/works/buttonImage_02.jpg')")
+          svg.slider__buttonIcon
+            use(xlink:href="img/sprite.svg#portfolioArrowUp")

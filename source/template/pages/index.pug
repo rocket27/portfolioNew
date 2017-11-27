@@ -6,14 +6,21 @@ block variables
 block content
   section.section.welcome
     include ../common/parallax
-    a.welcome__button.authorization(href="login.html") Авторизоваться
-    .contentBox
-      .contentBox__info
-        +user('welcome__userBlock', 'user_welcome')
-        +socials('welcome__socials', 'socials_welcome')
-      nav.nav.welcome__nav
-        ul.nav__list
-          each item in ["Мои работы", "Обо мне", "Блог"]
+    .welcome__inner
+      a.welcome__button.authorization(href="login.html") Авторизоваться
+      .contentBox
+        .contentBox__info
+          +user('welcome__userBlock', 'user_welcome')
+          +socials('welcome__socials', 'socials_welcome')
+        nav.nav.welcome__nav
+          ul.nav__list
             li.nav__item
-              a.nav__link(href="about.html")= item
-    +copyright('welcome__copyright')
+              a.nav__link(href="works.html") Мои работы
+            li.nav__item
+              a.nav__link(href="about.html") Обо мне
+            li.nav__item
+              a.nav__link(href="about.html") Блог
+            //- each item in ["Мои работы", "Обо мне", "Блог"]
+              li.nav__item
+                a.nav__link(href="about.html")= item
+      +copyright('welcome__copyright')

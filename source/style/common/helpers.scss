@@ -49,14 +49,26 @@
 }
 
 // Adaptive
+@mixin desktopMax {
+  @media (max-width: 1920px) {
+    @content;
+  }
+}
+
 @mixin desktop {
-  @media (max-width: 1800px) {
+  @media (max-width: 1680px) {
+    @content;
+  }
+}
+
+@mixin laptopMax {
+  @media (max-width: 1366px) {
     @content;
   }
 }
 
 @mixin laptop {
-  @media (max-width: 1200px) {
+  @media (max-width: 920px) {
     @content;
   }
 }

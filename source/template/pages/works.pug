@@ -1,17 +1,13 @@
 extends ../templateAbout
 
 block variables
-  - var title = 'About | Vladimir Astachov'
+  - var title = 'Works | Vladimir Astachov'
 
 block content
   .wrapper
     include ../common/hero
     section.section.works
-      .works__triangleBlock
-        .works__triangle
-          +triangleLeft('works__triangle')
-        .works__triangle
-          +triangleRight('works__triangle')
+      +triangleBlock('triangle__polygon_works')
       .works__title
         +title('works__sectionTitle', 'titleWorksBg', 'Мои работы')
     section.section.slider
@@ -32,3 +28,44 @@ block content
         a.slider__button(href="#" style="background-image: url('img/content/works/buttonImage_02.jpg')")
           svg.slider__buttonIcon
             use(xlink:href="img/sprite.svg#portfolioArrowUp")
+    section.section.reviews
+      .reviews__container.container
+        .reviews__title
+          +title('reviews__sectionTitle', 'titleAboutBg', 'Что обо мне говорят')
+        ul.reviewsBox
+          li.reviewsBox__item
+            .reviewsBox__text
+              | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+            .reviewsBox__userBlock
+              .reviewsBox__userPhoto
+                img.reviewsBox__image(src="img/content/works/reviewsUser_01.jpg")
+              .reviewsBox__userInfo
+                .reviewsBox__userName 
+                  | Ковальчук Дмитрий
+                .reviewsBox__position
+                  | основатель Loftschool
+          li.reviewsBox__item
+            .reviewsBox__text
+              | Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+            .reviewsBox__userBlock
+              .reviewsBox__userPhoto
+                img.reviewsBox__image(src="img/content/works/reviewsUser_02.jpg")
+              .reviewsBox__userInfo
+                .reviewsBox__userName 
+                  | Сабанцев Владимир
+                .reviewsBox__position
+                  | преподаватель
+        .box.box_works.reviews__form
+          .box__content.feedback
+            .feedback__title.subtitle
+              | Связаться со мной
+            form.feedback__form#feedbackForm(action="#")
+              input.feedback__input(type="text" placeholder="Имя")
+              input.feedback__input(type="text" placeholder="Email")
+              textarea.feedback__input.feedback__input_message(type="text" placeholder="Ваше сообщение")
+          ul.box__menu
+            li.box__menuItem
+              button.box__menuButton(type="submit" form="feedbackForm") Отправить
+            li.box__menuItem
+              button.box__menuButton(type="reset" form="feedbackForm") Очистить
+  include ../common/footer

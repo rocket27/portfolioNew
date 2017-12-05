@@ -1,0 +1,68 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  border-radius: $borderRadius;
+  overflow: hidden;
+  &_welcome {
+    @include boxSize(380px, 395px);
+  }
+  &_loginPage {
+    @include boxSize(380px, 406px);
+    .box__menuItem {
+      flex: 1;
+    }
+  }
+  &_contacts {
+    @include boxSize(380px, 290px);
+  }
+  &_works {
+    @include boxSize(380px, 437px);
+    .box__menuItem {
+      flex: 1;
+    }
+  }
+  &__content {
+    height: calc(100% - #{$boxMenuHeight});
+    background-color: $boxBgColor;
+    text-align: center;
+    padding: 20px;
+    &_welcome {
+      color: $gray;
+      padding-top: 40px;
+    }
+  }
+  &__menu {
+    height: $boxMenuHeight;
+    display: flex;
+  }
+  &__menuItem {
+    flex-grow: 1;
+    position: relative;
+    &::before {
+      display: block;
+      content: '';
+      width: 2px;
+      height: $boxMenuHeight;
+      background-color: #73c8c0;
+      position: absolute;
+      left: -1px;
+    }
+    &:first-child::before {
+      display: none;
+    }
+  }
+  &__menuButton {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: $boxMenuHeight;
+    font-family: 'robotoMedium';
+    color: $snowWhite;    
+    background-color: $greenTransparent;
+    transition: background-color .75s;
+    &:hover {
+      background-color: $darkGreenTransparent;
+    }
+  }
+}

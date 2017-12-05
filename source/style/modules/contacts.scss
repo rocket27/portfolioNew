@@ -1,11 +1,14 @@
 .contacts {
-  width: 380px;
-  height: 290px;
-  background-color: $board;
-  border-radius: 5px;
+  // width: 380px;
+  // height: 290px;
+  // background-color: $boxBgColor;
+  // border-radius: 5px;
   @include centered();
-  overflow: hidden;
-  padding: 30px 40px;
+  // overflow: hidden;
+  &__inner {
+    height: 100%;
+    padding: 30px 40px;
+  }
   &__title {
     text-align: center;
   }

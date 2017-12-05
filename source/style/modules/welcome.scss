@@ -9,19 +9,13 @@
     margin: 0 auto;
     position: relative;
   }
-  &__socials {
-    margin: 30px auto;
+  &__board {
+    @include centered();
   }
   &__copyright {
     color: $snowWhite;
     @include centered(x);
     bottom: 5%;
-  }
-}
-
-.socials_welcome {
-  .socials__icon {
-    fill: $green;
   }
 }
 

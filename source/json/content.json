@@ -13,12 +13,75 @@
     }
   ],
 
-  "contacts" : [
+  "navigation" : [
     {
-      "link1" : ["skype:skype_kdn", "skypeContacts", "skype_kdn"]
+      "name" : "Мои работы",
+      "link" : "works.html"
     },
     {
-      "link1" : ["mailto:astahov@gmail.com", "envelopeContacts", "astahov@gmail.com"]
+      "name" : "Обо мне",
+      "link" : "about.html"
+    },
+    {
+      "name" : "Блог",
+      "link" : "blog.html"
+    },
+    {
+      "name" : "Авторизация",
+      "link" : "login.html"
+    }
+  ],
+
+  "socials" : [
+    {
+      "fileName" : "vk",
+      "link" : "https://vk.com/dmitry_kamenev"
+    },
+    {
+      "fileName" : "github",
+      "link" : "https://github.com/rocket27"
+    },
+    {
+      "fileName" : "in",
+      "link" : "https://www.linkedin.com/in/дмитрий-каменев-a1732a146/"
+    }
+  ],
+
+  "socialsRound" : [
+    {
+      "fileName" : "vkRound",
+      "link" : "https://vk.com/dmitry_kamenev"
+    },
+    {
+      "fileName" : "githubRound",
+      "link" : "https://github.com/rocket27"
+    },
+    {
+      "fileName" : "inRound",
+      "link" : "https://www.linkedin.com/in/дмитрий-каменев-a1732a146/"
+    }
+  ],
+
+  "contacts" : [
+    {
+      "link" : "skype:skype_kdn",
+      "fileName" : "skypeContacts", 
+      "name" : "skype_kdn"
+    },
+    {
+      "link" : "mailto:astahov@gmail.com",
+      "fileName" : "envelopeContacts", 
+      "name" : "astahov@gmail.com"
+    },
+    {
+      "link" : "tel:+79312009324",
+      "fileName" : "phoneContacts", 
+      "name" : "+7 931 200 93 24"
+    },
+    {
+      "link" : "#",
+      "fileName" : "mapMarker", 
+      "name" : "г.Новосибирск, ул. Инская, д. 5"
     }
   ],
 

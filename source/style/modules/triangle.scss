@@ -1,0 +1,19 @@
+.triangle {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 100%;
+  &__unit {
+    display: block;
+    flex: 1;
+  }
+  &__polygon {
+    display: block;
+    &_works {
+      fill: $lightBeige;      
+    }
+    &_blog {
+      fill: $snowWhite;
+    }
+  }
+}

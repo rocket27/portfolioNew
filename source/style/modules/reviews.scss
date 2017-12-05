@@ -1,0 +1,11 @@
+.reviews {
+  height: 1140px;
+  background: url('../../img/bg/worksReviewsBg.jpg') no-repeat center center;
+  background-size: cover;
+  &__title {
+    padding-top: 30px;
+  }
+  &__form {
+    margin: 0 auto;
+  }
+}

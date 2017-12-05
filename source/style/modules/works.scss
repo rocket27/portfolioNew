@@ -1,16 +1,5 @@
 .works {
   position: relative;
-  &__triangleBlock {
-    width: 100%;
-    display: flex;
-    position: absolute;
-    bottom: 100%;    
-  }
-  &__triangle {
-    display: block;
-    flex: 1;
-    fill: $lightBeige;
-  }
   &__title {
     background-color: $lightBeige;
     text-align: center;

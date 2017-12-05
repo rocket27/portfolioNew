@@ -2,25 +2,22 @@ extends ../template
 
 block variables
   - var title = 'Home | Vladimir Astachov'
+  - var source = socials
 
 block content
   section.section.welcome
     include ../common/parallax
     .welcome__inner
       a.welcome__button.authorization(href="login.html") Авторизоваться
-      .contentBox
-        .contentBox__info
+      .box.box_welcome.welcome__board
+        .box__content.box__content_welcome
           +user('welcome__userBlock', 'user_welcome')
-          +socials('welcome__socials', 'socials_welcome')
-        nav.nav.welcome__nav
-          ul.nav__list
-            li.nav__item
-              a.nav__link(href="works.html") Мои работы
-            li.nav__item
-              a.nav__link(href="about.html") Обо мне
-            li.nav__item
-              a.nav__link(href="about.html") Блог
-            //- each item in ["Мои работы", "Обо мне", "Блог"]
-              li.nav__item
-                a.nav__link(href="about.html")= item
+          +socials('socials_welcome')
+        ul.box__menu
+          li.box__menuItem
+            a.box__menuButton(href="works.html") Мои работы
+          li.box__menuItem
+            a.box__menuButton(href="about.html") Обо мне
+          li.box__menuItem
+            a.box__menuButton(href="blog.html") Блог
       +copyright('welcome__copyright')

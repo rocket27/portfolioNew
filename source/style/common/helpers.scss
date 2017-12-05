@@ -43,9 +43,33 @@
   }
 }
 
-@mixin iconSize($w, $h) {
-  width: $w;
-  height: $h;
+@mixin iconSize($widtn, $height) {
+  width: $widtn;
+  height: $height;
+}
+
+@mixin boxSize($widtn, $height) {
+  width: $widtn;
+  height: $height;
+}
+
+%input {
+  width: 340px;
+  height: 45px;
+  background-color: rgba(#fff, .75);
+  border-radius: $borderRadius;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+%socials {
+  // display: block;
+  @include iconSize(30px, 22px);
+  opacity: .5;
+  transition: opacity .75s;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 // Adaptive

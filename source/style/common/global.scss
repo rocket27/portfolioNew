@@ -8,28 +8,11 @@ html {
   
 body {
   height: 100%;
+  display: flex;
+  flex-direction: column;
   font: $primaryFont;
   -webkit-font-smoothing: antialiased;
   margin: 0;
-}
-
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;  
-  position: relative;
-}
-
-.prllxWrapper {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.container {
-  max-width: 1800px;
-  height: 100%;
-  margin: 0 auto;
 }
 
 ul {
@@ -54,6 +37,36 @@ a:link, a:visited, a:hover, a:active {
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	font-weight: normal;
+}
+
+input, textarea, button {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.wrapper {
+  // min-height: 100%;
+  flex: 1 0 auto;
+  overflow: hidden;  
+  position: relative;
+}
+
+.prllxWrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  max-width: 1800px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .svg {

@@ -1,0 +1,11 @@
+extends ../templateAbout
+
+block variables
+  - var title = 'Blog | Vladimir Astachov'
+
+block content
+  .wrapper
+    include ../common/hero
+    section.section.blog
+      +triangleBlock('triangle__polygon_blog')
+  include ../common/footer

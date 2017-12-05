@@ -1,0 +1,15 @@
+.footerNav {
+  width: 400px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+    font-family: "robotoMedium";
+    color: $snowWhite;
+    transition: color .75s;
+    &:hover {
+      color: $green;
+    }
+  }
+}

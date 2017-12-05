@@ -1,6 +1,27 @@
-.login {
+.loginPage {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
+  &__board {
+    @include centered();
+  }
+}
+
+.login {
+  text-align: center;
+  &__inputWrapper {
+    display: flex;
+  }
+  &__iconBlock {
+    width: 45px;
+    height: 45px;
+    background-color: $silver;
+    border-radius: $borderRadius 0 0 $borderRadius;
+  }
+  &__input {
+    @extend %input;
+    width: 295px;
+    border-radius: 0 $borderRadius $borderRadius 0;
+  }
 }

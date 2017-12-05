@@ -11,21 +11,28 @@ mixin user (element, modifier)
     .user__name Владимир Астахов
     .user__description Личный сайт веб разработчика
 
-mixin socials (element, modifier)
-  ul.socials(class= element class= modifier)
-    each icon in socialsIcons
+mixin socials (additionalClass)
+  ul.socials(class= additionalClass)
+    each item in source
       li.socials__item
-        a.socials__link(href="#")
+        a.socials__link(href=`${item.link}` target="_blank")
           svg.socials__icon
-            use(xlink:href=`img/sprite.svg#${icon}`)
+            use(xlink:href=`img/sprite.svg#${item.fileName}`)
 
 mixin copyright (additionalClass)
   .copyright(class= additionalClass) © Владимир Астахов | Создано с любовью в LoftSchool | 2017
 
-mixin triangleLeft (element, modifier)
-  svg(viewbox="0 0 900 160" preserveAspectRatio="none" class= element class= modifier)
+mixin triangleLeft (additionalClass)
+  svg.triangle__polygon(viewbox="0 0 900 160" preserveAspectRatio="none" class= modifier)
     polygon(points = "0, 0 0, 160 900, 160")
 
-mixin triangleRight (element, modifier)
-  svg(viewbox="0 0 900 160" preserveAspectRatio="none" class= element class= modifier)
+mixin triangleRight (additionalClass)
+  svg.triangle__polygon(viewbox="0 0 900 160" preserveAspectRatio="none" class= modifier)
     polygon(points="0, 160 900, 160 900, 0")
+
+mixin triangleBlock (additionalClass)
+  .triangle
+    .triangle__unit
+      +triangleLeft(additionalClass)
+    .triangle__unit
+      +triangleRight(additionalClass)

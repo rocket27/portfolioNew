@@ -2,24 +2,25 @@
   width: 140px;  
   display: flex;
   justify-content: space-between;
+  &_welcome {
+    margin: 30px auto;
+    .socials__icon {
+      @extend %socials;
+      fill: $green;
+    }
+  }
   &_hero {
     position: absolute;
     top: 28px;
     left: 30px;
+    .socials__icon {
+      @extend %socials;
+      fill: $snowWhite;
+    }
   }
   &_footer {
     width: 128px;
-  }
-  &__icon {
-    display: block;
-    @include iconSize(30px, 22px);
-    opacity: .5;
-    transition: opacity .75s;
-    &:hover {
-      opacity: 1;
-    }
-
-    &_footer {
+    .socials__icon {
       @include iconSize(36px, 36px);
       fill: #9b9fa1;
       transition: fill .75s;
@@ -27,5 +28,8 @@
         fill: #fff;
       }
     }
+  }
+  &__icon {
+    display: block;
   }
 }

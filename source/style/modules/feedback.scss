@@ -1,0 +1,21 @@
+.feedback {
+  text-align: center;
+  position: relative;
+  padding-top: 31px;
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__input {
+    @extend %input;
+    &_message {
+      height: 140px;
+      resize: none;
+      padding: 14px 20px;
+    }
+  }
+}
+
+.test {
+  height: 300px;
+  background-color: $green;
+}

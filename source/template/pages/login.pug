@@ -4,13 +4,22 @@ block variables
   - var title = 'Login | Vladimir Astachov'
 
 block content
-  .section.login
+  .section.loginPage
     include ../common/parallax
-    .contentBox
-      .contentBox__info
-      nav.nav.welcome__nav
-        ul.nav__list
-          each item in ["На главную", "Войти"]
-            li.nav__item
-              a.nav__link(href="about.html")= item
+    .box.box_loginPage.loginPage__board
+      .box__content.login
+        .login__title.subtitle
+          | Авторизуйтесь
+        form.login__form#loginForm(action="#")
+          .login__inputWrapper
+            .login__iconBlock
+            input.login__input
+          .login__inputWrapper
+            .login__iconBlock
+            input.login__input
+      ul.box__menu
+        li.box__menuItem
+          a.box__menuButton(href="index.html") На главную
+        li.box__menuItem
+          button.box__menuButton(type="submit" form="#") Войти
     +copyright('welcome__copyright')

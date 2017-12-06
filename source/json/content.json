@@ -1,6 +1,4 @@
 {
-  "socialsIcons" : ["vk", "github", "in"], 
-
   "skills" : [
     {
       "Frontend" : ["HTML5", "CSS3", "JavaScript & jQuery"]

@@ -5,22 +5,14 @@
   overflow: hidden;
   position: relative;
   &__bg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    @extend %stretch;
   }
   &__bgImage {
     min-width: 100%;
     height: auto;
   }
   &__container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    @extend %stretch;
     // padding: 28px 30px;
   }
   &__content {

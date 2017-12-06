@@ -1,11 +1,20 @@
-extends ../templateAbout
+extends ../template
 
 block variables
   - var title = 'Blog | Vladimir Astachov'
 
 block content
   .wrapper
-    include ../common/hero
+    section.section.blogHero
+      .blogHero__bg
+        img.blogHero__bgImage(src="img/bg/heroBg.jpg")
+      .blogHero__container.container.container_blog
+        - var source = socials
+        +socials('socials_hero socials_heroBlog')
+        a.hamburger.hamburger_blog(href="#")
+          svg.hamburger__icon
+            use(xlink:href="img/sprite.svg#hamburger")
+        
     section.section.blog
       +triangleBlock('triangle__polygon_blog')
   include ../common/footer

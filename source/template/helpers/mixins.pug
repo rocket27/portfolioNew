@@ -23,11 +23,11 @@ mixin copyright (additionalClass)
   .copyright(class= additionalClass) © Владимир Астахов | Создано с любовью в LoftSchool | 2017
 
 mixin triangleLeft (additionalClass)
-  svg.triangle__polygon(viewbox="0 0 900 160" preserveAspectRatio="none" class= modifier)
+  svg.triangle__polygon(viewbox="0 0 900 160" preserveAspectRatio="none" class= additionalClass)
     polygon(points = "0, 0 0, 160 900, 160")
 
 mixin triangleRight (additionalClass)
-  svg.triangle__polygon(viewbox="0 0 900 160" preserveAspectRatio="none" class= modifier)
+  svg.triangle__polygon(viewbox="0 0 900 160" preserveAspectRatio="none" class= additionalClass)
     polygon(points="0, 160 900, 160 900, 0")
 
 mixin triangleBlock (additionalClass)

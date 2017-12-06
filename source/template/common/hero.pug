@@ -1,10 +1,8 @@
-block variables
-  - var source = socials
-
 section.section.hero
   .hero__bg
-    img.hero__bgImage(src="img/bg/aboutHeaderBg.jpg")
+    img.hero__bgImage(src="img/bg/heroBg.jpg")
   .hero__container.container
+    - var source = socials
     +socials('socials_hero')
     a.hamburger(href="#")
       svg.hamburger__icon

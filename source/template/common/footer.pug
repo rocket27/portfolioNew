@@ -1,6 +1,3 @@
-block variables
-  - var source = socialsRound
-
 footer.footer
   .footer__row.container
     nav.footerNav
@@ -8,6 +5,7 @@ footer.footer
         each item in navigation
           li.footerNav__item
             a.footerNav__link(href=`${item.link}`)= `${item.name}`
+    - var source = socialsRound
     +socials('socials_footer')
   .footer__row.container
     .footer__userAbout Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.

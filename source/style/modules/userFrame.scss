@@ -1,0 +1,12 @@
+.userFrame {
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,31 @@
+.blogNav {
+  flex: 1;
+  padding-top: 6px;
+  margin-right: 120px;
+  &__item {
+    padding: 8px 20px 8px 0;
+    margin-bottom: 20px;
+    &_active {
+      font-family: 'robotoBold';
+      color: $green;
+      border-right: 3px solid $green;
+      padding-right: 17px;
+    }
+    &:active {
+      border-right: 3px solid $green;
+      padding-right: 17px;
+    }
+  }
+  &__link {
+    display: block;
+    text-align: right;
+    transition: color .75s;
+    &:hover {
+      color: $green;
+    }
+    // &:active {
+    //   border-right: 3px solid $green;
+    //   padding-right: 17px;
+    // }
+  }
+}

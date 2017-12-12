@@ -4,12 +4,17 @@ mixin title (additionalClass, background, content)
       use(xlink:href=`img/sprite.svg#${background}`)
     .sectionTitle__inner= content
 
-mixin user (element, modifier)
+//- mixin user (element, modifier)
   .user(class= element class= modifier)
     .user__imageContainer
       img.user__image(src="img/content/header/userAvatar.jpg")
     .user__name Владимир Астахов
     .user__description Личный сайт веб разработчика
+
+mixin scrollArrow (target, additionalClass)
+  a.scrollArrow(class= additionalClass href=`${target}`)
+    svg.scrollArrow__icon
+      use(xlink:href="img/sprite.svg#arrowDown")
 
 mixin socials (additionalClass)
   ul.socials(class= additionalClass)
@@ -36,3 +41,13 @@ mixin triangleBlock (additionalClass)
       +triangleLeft(additionalClass)
     .triangle__unit
       +triangleRight(additionalClass)
+
+mixin userImage (fileName, additionalClass)
+  .userFrame(class= additionalClass)
+    img.userFrame__image(src=`img/content/hero/${fileName}.jpg`)
+
+mixin user (additionalClass)
+  .user(class= additionalClass)
+    +userImage('userAvatar')
+    .user__name Владимир Астахов
+    .user__description Личный сайт веб разработчика

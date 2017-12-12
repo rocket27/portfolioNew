@@ -1,0 +1,23 @@
+.article {
+  // padding-bottom: 70px;
+  // border-bottom: 5px solid #f1f1f2;
+  // margin-bottom: 70px;
+  &__title {
+    @extend %titleStyles;
+    font-size: 35px;
+    line-height: 41px;
+    margin-bottom: 20px;
+  }
+  &__date {
+    color: $green;
+    margin-bottom: 20px;
+  }
+  &__content {
+    p {
+      margin-bottom: 10px;
+    }
+    a {
+      @extend %inlineLink;
+    }
+  }
+}

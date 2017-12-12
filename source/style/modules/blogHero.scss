@@ -11,7 +11,27 @@
     min-width: 100%;
     height: auto;
   }
+  &__titleBg {
+    fill: rgba(#fdfdfd, .1);
+    margin: 0 auto;
+  }
   &__container {
     @extend %stretch;
   }
+  &__content {
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include centered();
+  }
+  &__userImage {
+    margin: 0 auto;
+  }
+}
+
+.testdiv {
+  position: absolute;
+  @include centered(x);
+  bottom: 0;
 }

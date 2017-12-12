@@ -1,0 +1,13 @@
+.blogArticles {
+  flex: 4;
+  &__item {
+    padding-bottom: 70px;
+    border-bottom: 5px solid #f1f1f2;
+    margin-bottom: 70px;
+    &:last-child {
+      padding-bottom: 0;
+      border: none;
+      margin-bottom: 0;
+    }
+  }
+}

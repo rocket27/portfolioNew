@@ -10,7 +10,5 @@ section.section.hero
     .hero__content    
       svg.hero__titleBg
         use(xlink:href="img/sprite.svg#portfolioHeader")
-      +user('hero__userBlock', 'user_hero')
-    a.downArrow(href="#")
-      svg.downArrow__icon
-        use(xlink:href="img/sprite.svg#arrowDown")
+      +user('hero__userBlock user_hero')
+    +scrollArrow('#', 'scrollArrow_hero')

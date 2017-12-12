@@ -2,8 +2,10 @@
   height: 1140px;
   background: url('../../img/bg/worksReviewsBg.jpg') no-repeat center center;
   background-size: cover;
+  position: relative;
   &__title {
     padding-top: 30px;
+    margin-bottom: 100px;
   }
   &__form {
     margin: 0 auto;

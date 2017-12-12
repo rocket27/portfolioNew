@@ -17,5 +17,8 @@
   }
   &__text {
     text-align: left;
+    a {
+      @extend %inlineLink;
+    }
   }
 }

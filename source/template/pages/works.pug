@@ -10,24 +10,25 @@ block content
       +triangleBlock('triangle__polygon_works')
       .works__title
         +title('works__sectionTitle', 'titleWorksBg', 'Мои работы')
-    section.section.slider
-      .slider__description
-        .slider__infoBlock
-          .subtitle.slider__projectName
-            | Сайт школы онлайн
-            br 
-            | образования
-          .slider__technology HTML, SCC, JavaScript
-          a.slider__projectLink(href="#") Посмотреть сайт
-      .slider__picture
-        img.slider__image(src="img/content/works/prjct_01.png")
-      .slider__buttons
-        a.slider__button(href="#" style="background-image: url('img/content/works/buttonImage_01.jpg')")
-          svg.slider__buttonIcon
-            use(xlink:href="img/sprite.svg#portfolioArrowDown")
-        a.slider__button(href="#" style="background-image: url('img/content/works/buttonImage_02.jpg')")
-          svg.slider__buttonIcon
-            use(xlink:href="img/sprite.svg#portfolioArrowUp")
+    section.section.sliderWrapper
+      .slider.container
+        .slider__description
+          .slider__infoBlock
+            .subtitle.slider__projectName
+              | Сайт школы онлайн
+              br 
+              | образования
+            .slider__technology HTML, SCC, JavaScript
+            a.slider__projectLink(href="#") Посмотреть сайт
+        .slider__picture
+          img.slider__image(src="img/content/works/prjct_01.png")
+        .slider__buttons
+          a.slider__button(href="#" style="background-image: url('img/content/works/buttonImage_01.jpg')")
+            svg.slider__buttonIcon
+              use(xlink:href="img/sprite.svg#portfolioArrowDown")
+          a.slider__button(href="#" style="background-image: url('img/content/works/buttonImage_02.jpg')")
+            svg.slider__buttonIcon
+              use(xlink:href="img/sprite.svg#portfolioArrowUp")
     section.section.reviews
       .reviews__container.container
         .reviews__title
@@ -55,6 +56,7 @@ block content
                   | Сабанцев Владимир
                 .reviewsBox__position
                   | преподаватель
+        //- ***********************************************
         .box.box_works.reviews__form
           .box__content.feedback
             .feedback__title.subtitle
@@ -68,4 +70,5 @@ block content
               button.box__menuButton(type="submit" form="feedbackForm") Отправить
             li.box__menuItem
               button.box__menuButton(type="reset" form="feedbackForm") Очистить
+        +scrollArrow('#', 'scrollArrow_reviews')
   include ../common/footer

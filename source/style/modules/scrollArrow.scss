@@ -1,8 +1,14 @@
-.downArrow {
+.scrollArrow {
   @include centered(x);
-  bottom: 10%;
-  z-index: 1;  
+  bottom: 70px;
+  &_hero {
+    z-index: 1;
+  }
+  &_reviews {
+    transform: rotate(180deg) translateX(50%);
+  }
   &__icon {
+    display: block;
     @include iconSize(26px, 16px);
     fill: $snowWhite;
     opacity: .7;

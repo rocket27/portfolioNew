@@ -7,8 +7,9 @@ block content
   .wrapper
     include ../common/hero
     section.section.about
+      +triangleBlock('triangle__polygon_about_left', 'triangle__polygon_about_right')
       .about__column.about__column_left
-        svg(viewbox="0 0 900 160" preserveAspectRatio="none").about__triangle.about__triangle_fillWhite
+        //- svg(viewbox="0 0 900 160" preserveAspectRatio="none").about__triangle.about__triangle_fillWhite
           polygon(points = "0, 0 0, 160 900, 160")
         .about__columnContent.about__columnContent_left
           .about__title
@@ -26,7 +27,7 @@ block content
                 a(href="https://loftschool.com/" target="_blank") LoftSchool.
                 |  Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
       .about__column.about__column_right
-        svg(viewbox="0 0 900 160" preserveAspectRatio="none").about__triangle.about__triangle_fillBeige
+        //- svg(viewbox="0 0 900 160" preserveAspectRatio="none").about__triangle.about__triangle_fillBeige
           polygon(points="0, 160 900, 160 900, 0")
         .about__columnContent.about__columnContent_right
           .aboutData

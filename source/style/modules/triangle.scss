@@ -9,6 +9,17 @@
   }
   &__polygon {
     display: block;
+    &_about {
+      &_left {
+        fill: $white;
+      }
+      &_right {
+        fill: $beige;
+        @include tablet {
+          fill: $white;
+        }
+      }
+    }
     &_works {
       fill: $lightBeige;      
     }

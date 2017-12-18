@@ -35,12 +35,12 @@ mixin triangleRight (additionalClass)
   svg.triangle__polygon(viewbox="0 0 900 160" preserveAspectRatio="none" class= additionalClass)
     polygon(points="0, 160 900, 160 900, 0")
 
-mixin triangleBlock (additionalClass)
+mixin triangleBlock (triangleLeftClass, triangleRightClass)
   .triangle
     .triangle__unit
-      +triangleLeft(additionalClass)
+      +triangleLeft(triangleLeftClass)
     .triangle__unit
-      +triangleRight(additionalClass)
+      +triangleRight(triangleRightClass)
 
 mixin userImage (fileName, additionalClass)
   .userFrame(class= additionalClass)

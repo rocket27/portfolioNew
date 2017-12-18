@@ -10,7 +10,8 @@
     margin-bottom: 30px;
   }
   &__image {
-    @include centered(x);
+    display: block;
+    @include centered();
   }
   &__title {
     margin-bottom: 20px;

@@ -1,18 +1,34 @@
 .userAbout {
-  width: 444px;
+  max-width: 444px;
   padding-top: 20px;
+  margin-left: auto;
+  @include desktopBreakPoint {
+    margin: 0 auto;
+  }
+  @include tablet {
+    width: 472px;
+    padding-top: 10px;
+  }
   &__picture {
-    display: inline-block;
-    width: 444px;
+    // display: inline-block;
+    // width: 444px;
+    width: 100%;
     height: 390px;
-    overflow: hidden;
-    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // overflow: hidden;
+    // position: relative;
     margin-bottom: 30px;
+    @include tablet {
+      width: 472px;
+      height: 416px;
+    }
   }
-  &__image {
-    display: block;
-    @include centered();
-  }
+  // &__image {
+  //   display: block;
+  //   @include centered();
+  // }
   &__title {
     margin-bottom: 20px;
   }

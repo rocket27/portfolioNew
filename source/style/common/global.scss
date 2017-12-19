@@ -67,12 +67,6 @@ button {
   max-width: 1800px;
   height: 100%;
   margin: 0 auto;
-  @include desktop {
-    max-width: 1200px;
-  }
-  @include laptop {
-    max-width: 768px;
-  }
   &_blog {
     max-width: 1140px;
   }

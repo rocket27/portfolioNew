@@ -1,15 +1,19 @@
 .about {
   display: flex;
   position: relative;
-  @include laptop {
+  @include tablet {
     flex-direction: column;
   }
   &__column {
     width: 50%;
-    padding-bottom: 70px;  
+    padding-bottom: 50px;  
     position: relative;
     @include laptop {
       width: 100%;
+      padding-bottom: 20px;
+    @include tablet {
+      padding-bottom: 40px;
+    }
     }
     &_left {
       background-color: $white;
@@ -20,25 +24,32 @@
   }
   &__columnContent {
     max-width: 900px;
-    @include desktop {
+    @include laptop {
       max-width: 600px;
+    }
+    @include tablet {
+      margin: 0 auto;
     }
     &_left {
       display: flex;
       text-align: center;
-      padding: 0 20px;
+      padding-right: 20px;
       margin-left: auto;
-      @include desktop {
+      @include desktopBreakPoint {
         flex-direction: column;
         align-items: center;
-      } 
+        padding: 0 20px;        
+      }
     }
     &_right {
       padding: 0 40px;
       margin-right: auto;
-      @include desktop {
+      @include laptop {
         padding-right: 0;
-      } 
+      }
+      @include tablet {
+        padding-left: 0;
+      }
     }
   }
   // &__triangle {
@@ -64,6 +75,9 @@
   &__sectionTitle {
     width: 416px;
     margin-top: -35px;
+    @include tablet {
+      margin-top: 0;
+    }
   }
   &__SectionTitleBg {
     width: 357px;

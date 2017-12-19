@@ -1,8 +1,15 @@
 .aboutUserInfo {
   margin-bottom: 30px;
+  @include tablet {
+    width: 472px;
+    margin: 0 auto 30px;
+  }
   &__title {
     text-align: center;
     padding-top: 12px;
     margin-bottom: 40px;
+    @include tablet {
+      padding-top: 40px;
+    }
   }
 }

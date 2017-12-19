@@ -28,7 +28,7 @@
     // @include centered(y);
     fill: rgba(#fdfdfd, .1);
     margin: 0 auto;
-    @include laptop {
+    @include tablet {
       display: none;
     }
   }

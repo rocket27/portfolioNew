@@ -1,5 +1,9 @@
 .footer {
   // height: 147px;
+  // position: absolute;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
   flex: 0 0 auto;
   background-color: rgba(55, 62, 66, .85);
   &__row {
@@ -12,7 +16,7 @@
     @include laptopBreakPoint {
       height: 120px;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
     }
     &:first-child {
@@ -24,6 +28,7 @@
     @include laptopBreakPoint {
       width: 100%;
       text-align: center;
+      margin-bottom: 15px;
     }
   }
 }

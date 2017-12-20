@@ -1,5 +1,8 @@
 .footerNav {
   width: 400px;
+  @include laptopBreakPoint {
+    margin-bottom: 15px;
+  }
   &__list {
     display: flex;
     justify-content: space-between;

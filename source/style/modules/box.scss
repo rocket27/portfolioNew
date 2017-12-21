@@ -14,6 +14,9 @@
   }
   &_contacts {
     @include boxSize(380px, 290px);
+    @include tablet {
+      @include boxSize(350px, 285px);
+    }
   }
   &_works {
     @include boxSize(380px, 437px);

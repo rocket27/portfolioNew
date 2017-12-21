@@ -11,9 +11,9 @@
     @include laptop {
       width: 100%;
       padding-bottom: 20px;
+    }
     @include tablet {
       padding-bottom: 40px;
-    }
     }
     &_left {
       background-color: $white;
@@ -42,13 +42,15 @@
       }
     }
     &_right {
-      padding: 0 40px;
+      padding: 0 10px 0 40px;
       margin-right: auto;
-      @include laptop {
-        padding-right: 0;
+      @include laptopBreakPoint {
+        // padding-right: 0;
+        padding: 0 10px 0 20px;
       }
       @include tablet {
-        padding-left: 0;
+        // padding-left: 0;
+        padding: 10px;
       }
     }
   }

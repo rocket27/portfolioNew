@@ -6,4 +6,7 @@
 
 #map {
   height: 1080px;
+  @include tablet {
+    height: 650px;
+  }
 }

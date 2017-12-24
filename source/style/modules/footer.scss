@@ -1,5 +1,5 @@
 .footer {
-  // height: 147px;
+  min-height: 147px;
   // position: absolute;
   // left: 0;
   // right: 0;
@@ -7,14 +7,14 @@
   flex: 0 0 auto;
   background-color: rgba(55, 62, 66, .85);
   &__row {
-    height: 73px;
+    min-height: 73px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: $lightGray;
-    padding: 0 30px;
+    padding: 20px 30px;
     @include laptopBreakPoint {
-      height: 120px;
+      min-height: 120px;
       flex-direction: column;
       justify-content: center;
       align-items: center;

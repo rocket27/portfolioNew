@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
       return {
         move: function(block, windowScroll, strateAmount) {
           let 
-            strate = windowScroll / -strateAmount + '%',
+            strate = windowScroll / strateAmount + '%',
             transformString = 'translate3d(0,' + strate + ', 0)',
             style = block.style;
     
@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
         init: function(wScroll) {
           this.move(bg, wScroll, 45);
-          this.move(sectionText, wScroll, 10);
-          this.move(user, wScroll, 4);
+          this.move(sectionText, wScroll, 5);
+          this.move(user, wScroll, -10);
         }
       }
     }());

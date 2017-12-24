@@ -9,7 +9,12 @@
   }
   &__bgImage {
     min-width: 100%;
-    height: auto;
+    height: 100%;
+    background: url('../../img/bg/heroBg.jpg') no-repeat top center;
+    background-size: cover;
+    @include phoneMax {
+      background-image: url('../../img/bg/heroBg_320.jpg');
+    }
   }
   &__container {
     @extend %stretch;

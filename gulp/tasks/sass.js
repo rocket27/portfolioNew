@@ -8,7 +8,7 @@ module.exports = function() {
       .pipe($.gp.sass()).on('error', $.gp.notify.onError({ title: 'Style' }))
       .pipe($.gp.autoprefixer({ browsers: $.config.autoprefixerConfig }))
       .pipe($.gp.cssUnit({
-        type: 'px-to-rem',
+        type: 'em-to-rem',
         rootSize: 16
       }))
       .pipe($.gp.sourcemaps.write())

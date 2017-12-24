@@ -3,6 +3,12 @@
   @include laptopBreakPoint {
     margin-bottom: 15px;
   }
+  @include phoneMax {
+    width: 100%;
+  }
+  // @include phone {
+  //   width: 100%;
+  // }
   &__list {
     display: flex;
     justify-content: space-between;

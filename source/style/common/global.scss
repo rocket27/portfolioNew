@@ -8,6 +8,12 @@ html {
   @include tablet {
     font-size: 14px;
   }
+  @include phoneMax {
+    font-size: 13px;
+  }
+  @include phone {
+    font-size: 12px;
+  }
 }
 
 body {

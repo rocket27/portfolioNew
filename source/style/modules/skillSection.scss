@@ -11,7 +11,14 @@
   &__list {
     display: flex;
     flex-flow: row wrap;
-    // justify-content: center;
+    margin-left: -40px;
+    // justify-content: center;    
+    @include laptop {
+      margin-left: -37px;
+    }
+    @include laptopBreakPoint {
+      margin-left: -20px;
+    }
     @include tablet {
       justify-content: center;
     }
@@ -21,19 +28,23 @@
     width: 120px;
     height: 120px;
     position: relative;
-    margin-right: 40px;
+    margin-left: 40px;
     margin-bottom: 20px;
     @include laptop {
       width: 110px;
       height: 110px;
-      margin-right: 37px;
+      margin-left: 37px;
     }
     @include laptopBreakPoint {
-      margin-right: 20px;
+      margin-left: 20px;
     }
-    &:last-child {
-      margin-right: 0;
+    @include tablet {
+      // width: 125px;
+      // width: 125px;
     }
+    // &:last-child {
+    //   margin-right: 0;
+    // }
   }
   &__name {
     font-size: 14px;

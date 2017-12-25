@@ -1,0 +1,17 @@
+.circle {
+  display: block;
+  fill: none;
+  stroke-width: 20;
+  &__first {
+    stroke: #dfdcd5;
+    fill: none;
+  }
+  &__second {
+    stroke: $green;
+    stroke-dasharray: .0010 282.6;
+    transition: all .75s;
+  }
+  &:hover .circle15 {
+    stroke-dasharray: 42.39 282.6;
+  }
+}

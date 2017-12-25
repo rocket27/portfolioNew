@@ -13,9 +13,17 @@
     position: absolute;
     top: 28px;
     left: 30px;
+    @include phoneMax {
+      width: 120px;
+      top: 15px;
+      left: 15px;
+    }
     .socials__icon {
       @extend %socials;
       fill: $snowWhite;
+      @include phoneMax {
+        @include iconSize(20px, 20px);
+      }
     }
   }
   &_heroBlog {

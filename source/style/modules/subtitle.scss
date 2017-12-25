@@ -2,6 +2,10 @@
   @extend %heading;
   font-size: 35px;
   line-height: 41px;
+  @include tablet {
+    font-size: 30px;
+    line-height: 36px;
+  }
   &_contacts {
     color: $darkGray;
   }

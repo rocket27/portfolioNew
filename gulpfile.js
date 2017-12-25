@@ -14,6 +14,7 @@ global.$ = {
   browserSync: require('browser-sync').create(),
   sassGlob: require('gulp-sass-glob'),
   cssUnit: require('gulp-css-unit'),
+  sftp: require('gulp-sftp'),
   gp: require('gulp-load-plugins')()
 };
 

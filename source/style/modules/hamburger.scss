@@ -2,11 +2,19 @@
   position: absolute;
   top: 28px;
   right: 30px;
+  @include phoneMax {
+    top: 15px;
+    right: 15px;
+  }
   &_blog {
     right: 0;
   }
   &__icon {
+    display: block;
     @include iconSize(40px, 35px);
     fill: $snowWhite;
+    @include phoneMax {
+      @include iconSize(25px, 22px);
+    }
   }
 }

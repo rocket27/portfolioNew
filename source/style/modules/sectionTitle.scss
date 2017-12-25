@@ -3,6 +3,9 @@
   color: $darkGray;
   position: relative;
   padding: 0 40px;
+  @include tablet {
+    font-size: 49px;
+  }
   &__bg {
     display: block;
     width: 100%;

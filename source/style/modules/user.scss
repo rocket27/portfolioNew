@@ -2,7 +2,10 @@
   text-align: center;
   &_hero {
     .user__name {
-      font-size: 35px;      
+      font-size: 35px;
+      @include phoneMaxBreakPoint {
+        font-size: 21px;
+      }
     }
   }
   &__name {
@@ -10,5 +13,9 @@
   }
   &__description {
     font-family: "robotoLight";
+    font-size: 16px;
+    @include phoneMaxBreakPoint {
+      font-size: 14px;
+    }
   }
 }

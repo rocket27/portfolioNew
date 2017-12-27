@@ -1,4 +1,5 @@
 .authorization {
+  align-self: flex-end;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,10 +9,14 @@
   color: $snowWhite;
   border: 1px solid $snowWhite;
   border-radius: $borderRadius;
-  position: absolute;
-  top: 5%;
-  right: 5%;
   transition: all .75s;
+  @include phoneMax {
+    align-self: auto;
+  }
+  @include phoneMaxBreakPoint {
+    width: 148px;
+    height: 40px;
+  }
   &:hover {
     color: $green;
     background-color: $snowWhite;

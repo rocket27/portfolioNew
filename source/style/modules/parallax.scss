@@ -7,6 +7,10 @@
   margin-left: -50%;
   background: url('../../img/parallax/parallaxBg.jpg') no-repeat top center;
   background-size: cover;
+  z-index: -1;
+  @include tablet {
+    display: none;
+  }
   &__layer {
     width: 4000px;
     height: 2658px;

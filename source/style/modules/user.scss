@@ -1,5 +1,13 @@
 .user {
   text-align: center;
+  &_welcome {
+    .user__name {
+      font-size: 28px;
+      @include phoneMaxBreakPoint {
+        font-size: 21px;
+      }
+    }
+  }
   &_hero {
     .user__name {
       font-size: 35px;

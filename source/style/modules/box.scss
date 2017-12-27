@@ -5,6 +5,12 @@
   overflow: hidden;
   &_welcome {
     @include boxSize(380px, 395px);
+    @include tablet {
+      @include boxSize(348px, 395px);
+    }
+    @include phoneMax {
+      @include boxSize(300px, 395px);
+    }
   }
   &_loginPage {
     @include boxSize(380px, 406px);
@@ -61,6 +67,7 @@
     align-items: center;
     height: $boxMenuHeight;
     font-family: 'robotoMedium';
+    // font-size: $baseFontSize;
     color: $snowWhite;    
     background-color: $greenTransparent;
     transition: background-color .75s;

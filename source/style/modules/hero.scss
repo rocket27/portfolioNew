@@ -17,15 +17,15 @@
     background-size: cover;
     @include phoneMax {
       background-image: url('../../img/bg/heroBgMobile_1x.jpg');
-      @include density2x {
-        background-image: url('../../img/bg/heroBgMobile_2x.jpg');
-      }
-      @include density3x {
-        background-image: url('../../img/bg/heroBgMobile_3x.jpg');
-      }
-      @include density4x {
-        background-image: url('../../img/bg/heroBgMobile_4x.jpg');
-      }
+      // @include density2x {
+      //   background-image: url('../../img/bg/heroBgMobile_2x.jpg');
+      // }
+      // @include density3x {
+      //   background-image: url('../../img/bg/heroBgMobile_3x.jpg');
+      // }
+      // @include density4x {
+      //   background-image: url('../../img/bg/heroBgMobile_4x.jpg');
+      // }
     }
   }
   &__container {

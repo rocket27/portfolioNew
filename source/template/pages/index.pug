@@ -9,7 +9,7 @@ block content
     include ../common/parallax
     .welcome__inner
       a.welcome__button.authorization(href="login.html") Авторизоваться
-      .box.box_welcome.welcome__board
+      .welcome__board.box.box_welcome
         .box__content.box__content_welcome
           +user('welcome__userBlock user_welcome')
           +socials('socials_welcome')
@@ -20,4 +20,4 @@ block content
             a.box__menuButton(href="about.html") Обо мне
           li.box__menuItem
             a.box__menuButton(href="blog.html") Блог
-      +copyright('welcome__copyright')
+      +copyright('copyright_welcome')

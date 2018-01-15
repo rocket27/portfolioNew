@@ -16,16 +16,16 @@
     background: url('../../img/bg/heroBg.jpg') no-repeat top center;
     background-size: cover;
     @include phoneMax {
-      background-image: url('../../img/bg/heroBgMobile_1x.jpg');
-      // @include density2x {
-      //   background-image: url('../../img/bg/heroBgMobile_2x.jpg');
-      // }
-      // @include density3x {
-      //   background-image: url('../../img/bg/heroBgMobile_3x.jpg');
-      // }
-      // @include density4x {
-      //   background-image: url('../../img/bg/heroBgMobile_4x.jpg');
-      // }
+      background-image: url('../../img/bg/heroBgMobile_1xTest.jpg');
+      @include density2x {
+        background-image: url('../../img/bg/heroBgMobile_2xTest.jpg');
+      }
+      @include density3x {
+        background-image: url('../../img/bg/heroBgMobile_3xTest.jpg');
+      }
+      @include density4x {
+        background-image: url('../../img/bg/heroBgMobile_4xTest.jpg');
+      }
     }
   }
   &__container {

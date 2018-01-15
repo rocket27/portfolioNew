@@ -1,3 +1,5 @@
+'use strict';
+
 document.addEventListener('DOMContentLoaded', function() { // Аналог $(document).ready(function(){
   let parallaxContainer = document.getElementById('parallax');
 

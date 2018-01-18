@@ -1,0 +1,15 @@
+section.section.hero.heroBlog
+  include navi
+  .hero__bg
+    .hero__bgImage
+  .hero__container.container
+    - var source = socials
+    +socials('socials_hero socials_heroBlog')
+    a.hamburger.hamburger_blog(href="#")
+      svg.hamburger__icon
+        use(xlink:href="img/sprite.svg#hamburger")
+    .hero__content
+      +userImage('userAvatar', 'heroBlog__userImage')
+      +title('heroBlogTitle', 'titleBlogBg', 'Блог')
+      .heroBlog__description
+        | Статьи, которые я написал

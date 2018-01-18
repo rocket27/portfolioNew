@@ -15,9 +15,5 @@
     display: inline-block;
     @extend %heading;
     @include centered();
-    &_blogHero {
-      position: normal;
-      color: $snowWhite;
-    }
   }
 }

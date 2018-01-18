@@ -1,7 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-  let hero = document.querySelector('.hero');
+'use strict'
 
-  if (hero) {
+document.addEventListener('DOMContentLoaded', function() {
+  let hero = document.querySelector('.hero'),
+    heroBlog = document.querySelector('.heroBlog');
+
+  if (hero && !heroBlog) {
+
     let scrollParallax = (function() {
       let 
         bg = document.querySelector('.hero__bg'),
@@ -23,6 +27,41 @@ document.addEventListener('DOMContentLoaded', function() {
           this.move(bg, wScroll, 45);
           this.move(sectionText, wScroll, 5);
           this.move(user, wScroll, -10);
+        }
+      }
+    }());
+    
+    window.onscroll = function() {
+      let wScroll = window.pageYOffset;
+    
+      scrollParallax.init(wScroll);
+    }
+
+  } else if (heroBlog) {
+
+    let scrollParallax = (function() {
+      let 
+        bg = document.querySelector('.hero__bg'),
+        user = document.querySelector('.heroBlog__userImage'),
+        title = document.querySelector('.heroBlogTitle'),
+        text = document.querySelector('.heroBlog__description');
+    
+      return {
+        move: function(block, windowScroll, strateAmount) {
+          let 
+            strate = windowScroll / strateAmount + '%',
+            transformString = 'translate3d(0,' + strate + ', 0)',
+            style = block.style;
+    
+          style.transform = transformString;
+          style.webkitTransform = transformString;
+        },
+    
+        init: function(wScroll) {
+          this.move(bg, wScroll, 30);
+          this.move(user, wScroll, 7);
+          this.move(title, wScroll, 5);
+          this.move(text, wScroll, -30);
         }
       }
     }());

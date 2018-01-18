@@ -12,12 +12,12 @@
       @include boxSize(300px, 395px);
     }
   }
-  &_loginPage {
-    @include boxSize(380px, 406px);
-    .box__menuItem {
-      flex: 1;
-    }
-  }
+  // &_loginPage {
+  //   @include boxSize(380px, 406px);
+  //   .box__menuItem {
+  //     flex: 1;
+  //   }
+  // }
   &_contacts {
     @include boxSize(380px, 290px);
     @include tablet {

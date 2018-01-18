@@ -5,7 +5,8 @@
   right: 0;
   bottom: 0;
   z-index: 9999;
-  background: $green;
+  background: $green url('../../img/bg/preloaderBg.jpg') no-repeat center center;
+  background-size: cover;
   &__content {
     width: 150px;
     height: 150px;
@@ -46,6 +47,8 @@
   }
   &__percents {
     @include centered;
+    font-family: robotoBold;
+    font-size: 18px;
     color: $snowWhite;
   }
 }

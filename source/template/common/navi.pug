@@ -1,0 +1,6 @@
+.navi
+  nav.mainMenu
+    ul.mainMenu__list
+      each item in navigation
+        li.mainMenu__item
+          a.mainMenu__link(href=`${item.link}`)= `${item.name}`

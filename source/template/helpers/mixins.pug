@@ -2,14 +2,7 @@ mixin title (additionalClass, background, content)
   .sectionTitle(class= additionalClass)
     svg.sectionTitle__bg
       use(xlink:href=`img/sprite.svg#${background}`)
-    .sectionTitle__inner= content
-
-//- mixin user (element, modifier)
-  .user(class= element class= modifier)
-    .user__imageContainer
-      img.user__image(src="img/content/header/userAvatar.jpg")
-    .user__name Владимир Астахов
-    .user__description Личный сайт веб разработчика
+    h2.sectionTitle__inner= content
 
 mixin scrollArrow (target, additionalClass)
   a.scrollArrow(class= additionalClass href=`${target}`)

@@ -1,0 +1,20 @@
+.heroBlog {
+  height: 400px;
+  min-height: 400px;
+  color: $snowWhite;
+  &__description {
+    margin-top: -65px;
+  }
+  .hero__bgImage {
+    background-position: center 10%;
+  }
+  .container {
+    max-width: 1140px;
+  }
+  .hero__content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

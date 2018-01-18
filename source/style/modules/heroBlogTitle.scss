@@ -1,0 +1,14 @@
+.heroBlogTitle {
+  .sectionTitle__bg {
+    fill: rgba($snowWhite, .07);
+  }
+  .sectionTitle__inner {
+    line-height: 1.1; 
+    color: $snowWhite;
+    @include centered(x);
+    top: 10%;
+    &:before, &:after {
+      background-color: rgba($snowWhite, .2);
+    }
+  }
+}

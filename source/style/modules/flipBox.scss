@@ -1,0 +1,21 @@
+.flipBox {
+  width: 380px;
+  height: 395px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 1.75s;
+  // border-radius: $borderRadius;
+  // overflow: hidden;
+  &:hover {
+    transform: rotateY(180deg);
+  }
+  &__card {
+    @extend %stretch;
+    &_user, &_login {
+      backface-visibility: hidden;
+    }
+    &_login {
+      transform: rotateY(180deg);
+    }
+  }
+}

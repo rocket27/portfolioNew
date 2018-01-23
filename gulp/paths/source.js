@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = [
-  './source/js/global.js',
+  './source/js/common.js',
   './source/js/parallax.js',
   './source/js/scrollParallax.js',
   './source/js/preloader.js',

@@ -12,6 +12,7 @@
   transition: all .75s;
   &_hidden {
     opacity: 0;
+    cursor: default;
   }
   @include phoneMax {
     align-self: auto;

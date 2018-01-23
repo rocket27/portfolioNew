@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let flipBox = document.querySelector('.flipBox');
   
   if (flipBox) {
-    
+
     let autBtn = document.querySelector('.authorization'),
       userCard = document.querySelector('.flipBox__card_user'),
       loginCard = document.querySelector('.flipBox__card_login'),
@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       flipBox.style.transform = "rotateY(0deg)";
+      loginCard.classList.remove('flipBox__card_login_active');
+      userCard.classList.add('flipBox__card_user_active');
     })
 
   }

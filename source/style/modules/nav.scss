@@ -1,0 +1,34 @@
+.nav {
+  height: $navHeight;
+  border-radius: 0 0 $borderRadius $borderRadius;
+  overflow: hidden;
+  &__menu {
+    display: flex;
+    color: $snowWhite;
+  }
+  &__menuItem {
+    flex-grow: 1;
+    border-left: $navButtonsBorder;
+    border-right: $navButtonsBorder;
+    &:first-child {
+      border-left: none;
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+  &__menuButton {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: $boxMenuHeight;
+    font-family: 'robotoMedium';
+    color: $snowWhite;    
+    background-color: $greenTransparent;
+    transition: background-color .75s;
+    &:hover {
+      background-color: $darkGreenTransparent;
+    }
+  }
+}

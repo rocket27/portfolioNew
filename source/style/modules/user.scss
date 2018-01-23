@@ -1,6 +1,8 @@
 .user {
   text-align: center;
   &_welcome {
+    color: $gray;
+    margin-bottom: 35px;
     .user__name {
       font-size: 28px;
       @include phoneMaxBreakPoint {

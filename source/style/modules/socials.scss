@@ -8,8 +8,12 @@
       margin: 40px auto;
     }
     .socials__icon {
-      @extend %socials;
-      fill: $green;
+      @include iconSize(30px, 22px);
+      fill: rgba($green, .5);
+      transition: fill .75s;
+    }
+    .socials__link:hover .socials__icon {
+      fill: $green;      
     }
   }
   &_hero {
@@ -43,7 +47,7 @@
       }
     }
   }
-  &__icon {
-    display: block;
+  &__link:hover &__icon {
+    opacity: 1;
   }
 }

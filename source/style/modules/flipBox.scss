@@ -4,18 +4,64 @@
   position: relative;
   transform-style: preserve-3d;
   transition-duration: 1.75s;
-  // border-radius: $borderRadius;
-  // overflow: hidden;
-  &:hover {
-    transform: rotateY(180deg);
-  }
   &__card {
+    display: flex;
+    flex-direction: column;
+    backface-visibility: hidden;
     @extend %stretch;
-    &_user, &_login {
-      backface-visibility: hidden;
+    // &_user {
+      // }
+      &_login {
+        transform: rotateY(180deg);
+      }
     }
-    &_login {
-      transform: rotateY(180deg);
+  &__cardContent {
+    height: calc(100% - #{$boxMenuHeight});
+    background-color: $boxBgColor;
+    border-radius: $borderRadius $borderRadius 0 0;
+    overflow: hidden;     
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+.nav {
+  height: $navHeight;
+  border-radius: 0 0 $borderRadius $borderRadius;
+  overflow: hidden;
+  &__menu {
+    display: flex;
+    color: $snowWhite;
+  }
+  &__menuItem {
+    flex-grow: 1;
+    position: relative;
+    &::before {
+      display: block;
+      content: '';
+      width: 2px;
+      height: $boxMenuHeight;
+      background-color: #73c8c0;
+      position: absolute;
+      left: -1px;
+    }
+    &:first-child::before {
+      display: none;
+    }
+  }
+  &__menuButton {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: $boxMenuHeight;
+    font-family: 'robotoMedium';
+    // font-size: $baseFontSize;
+    color: $snowWhite;    
+    background-color: $greenTransparent;
+    transition: background-color .75s;
+    &:hover {
+      background-color: $darkGreenTransparent;
     }
   }
 }

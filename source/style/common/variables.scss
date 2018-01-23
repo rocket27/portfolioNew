@@ -23,7 +23,8 @@ $boxBgColor: rgba(252, 252, 252, .85);
 // Others
 $background: url('../../img/bg/mainBg.jpg') no-repeat center center;
 $borderRadius: 5px;
-$boxMenuHeight: 45px;
+$boxMenuHeight: 45px; // Заменить везде на navHeight и удалить
+$navHeight: 45px;
 
 // #dfdcd5 - .circle__first stroke color
 

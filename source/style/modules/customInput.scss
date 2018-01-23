@@ -1,0 +1,38 @@
+.customInput {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 10px;
+  &__icon {
+    display: block;
+    @include centered();
+    fill: $snowWhite;
+    opacity: 0;
+    transition: opacity .3s;
+    &_checkbox {
+      @include iconSize(12px, 10px);
+    }
+  }
+  &_checkbox {
+    background-color: $green;
+    border-radius: 2px;
+  }
+  &_radio {
+    background-color: $snowWhite;
+    border: 1px solid #cccdcd;
+    border-radius: 50%;
+    &:before {
+      display: block;
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: $green;
+      border-radius: 50%;
+      @include centered();
+      opacity: 0;
+      transition: opacity .3s;
+    }
+  }
+}

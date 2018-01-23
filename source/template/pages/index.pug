@@ -8,35 +8,61 @@ block content
   section.section.welcome
     include ../common/parallax
     .welcome__inner
-      a.welcome__button.authorization(href="login.html") Авторизоваться
+      a.welcome__button.authorization(href="#") Авторизоваться
       .flipBox
-        .flipBox__card.flipBox__card_user.box
-          .box__content.box__content_welcome
+        .flipBox__card.flipBox__card_user.flipBox__card_user_active
+          .flipBox__cardContent
             +user('welcome__userBlock user_welcome')
             +socials('socials_welcome')
-          ul.box__menu
-            li.box__menuItem
-              a.box__menuButton(href="works.html") Мои работы
-            li.box__menuItem
-              a.box__menuButton(href="about.html") Обо мне
-            li.box__menuItem
-              a.box__menuButton(href="blog.html") Блог
-        .flipBox__card.flipBox__card_login.box
-          .box__content.login
-            .login__title.subtitle
-              | Авторизуйтесь
-            form.login__form#loginForm(action="#")
-              .login__inputWrapper
-                .login__iconBlock
-                input.login__input
-              .login__inputWrapper
-                .login__iconBlock
-                input.login__input
-          ul.box__menu
-            li.box__menuItem
-              a.box__menuButton(href="index.html") На главную
-            li.box__menuItem
-              button.box__menuButton(type="submit" form="#") Войти
+          nav.nav.welcome__nav
+            ul.nav__menu
+              li.nav__menuItem
+                a.nav__menuButton(href="works.html") Мои работы
+              li.nav__menuItem
+                a.nav__menuButton(href="about.html") Обо мне
+              li.nav__menuItem
+                a.nav__menuButton(href="blog.html") Блог
+        .flipBox__card.flipBox__card_login
+          form.flipBox__cardContent.loginForm#autForm(action="#")
+            legend.loginForm__legend
+              .loginForm__title.subtitle
+                | Авторизуйтесь
+              .loginForm__inputWrapper
+                .loginForm__iconBlock
+                  svg.loginForm__icon
+                    use(xlink:href="../../img/sprite.svg#login")
+                input.loginForm__input(type="text")
+              .loginForm__inputWrapper
+                .loginForm__iconBlock
+                  svg.loginForm__icon
+                    use(xlink:href="../../img/sprite.svg#password")
+                input.loginForm__input(type="password")
+              label.loginForm__checkboxField
+                input.loginForm__checkbox(type="checkbox")
+                span.customInput.customInput_checkbox
+                  svg.customInput__icon.customInput__icon_checkbox
+                    use(xlink:href="../../img/sprite.svg#check")
+                span.loginForm__checkboxFieldText
+                  | Я человек
+              .loginForm__confirmation
+                span.loginForm__confirmationText
+                  | Вы точно не робот?
+                label.loginForm__radioField
+                  input.loginForm__radio(type="radio" name="confirmation" value="Да" id="confirmValue1")
+                  span.customInput.customInput_radio
+                  span.loginForm__radioFieldText
+                    | Да
+                label.loginForm__radioField
+                  input.loginForm__radio(type="radio" name="confirmation" value="Не уверен" id="confirmValue2" checked)
+                  span.customInput.customInput_radio
+                  span.loginForm__radioFieldText
+                    | Не уверен
+          nav.nav
+            ul.nav__menu
+              li.nav__menuItem
+                a.nav__menuButton.home(href="#") На главную
+              li.nav__menuItem
+                button.nav__menuButton(type="submit" form="#") Войти
 
       //- .welcome__board.box.box_welcome
       //-   .box__content.box__content_welcome

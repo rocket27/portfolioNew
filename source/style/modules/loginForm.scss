@@ -1,0 +1,67 @@
+.loginForm {
+  color: $gray;
+  text-align: center;
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__inputWrapper {
+    display: flex;
+  }
+  &__iconBlock {
+    width: 45px;
+    height: 45px;
+    background-color: $silver;
+    border-radius: $borderRadius 0 0 $borderRadius;
+    position: relative;
+  }
+  &__icon {
+    display: block;
+    @include iconSize(16px, 16px);
+    fill: #c4cbcd;
+    @include centered();
+  }
+  &__input {
+    @extend %input;
+    width: 295px;
+    border-radius: 0 $borderRadius $borderRadius 0;
+  }
+  &__checkboxField {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  &__checkbox {
+    display: none;
+    &:checked + .customInput_checkbox {
+      .customInput__icon {
+        opacity: 1;
+      }
+    }
+  }
+  &__confirmation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__confirmationText {
+    font-family: 'robotoBold';
+    flex-basis: 100%;
+    margin-bottom: 16px;
+  }
+  &__radioField {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__radio {
+    display: none;
+    &:checked + .customInput_radio:before {
+      opacity: 1;
+    }
+  } 
+}

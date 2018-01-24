@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     menuTrigger.addEventListener('click', function(e) {
 
       e.preventDefault();
+      getClass(menuTrigger, 'hamburger_active');
 
       if (navi.classList.contains('navi_active')) {
         navi.classList.remove('navi_active');
@@ -27,3 +28,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }) 
   }
 });
+
+function getClass(element, className) {
+  if (element.classList.contains(className)) {
+    element.classList.remove(className);
+  } else {
+    element.classList.add(className);
+  }
+}

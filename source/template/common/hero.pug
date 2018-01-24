@@ -6,8 +6,9 @@ section.section.hero
     - var source = socials
     +socials('socials_hero')
     a.hamburger(href="#")
-      svg.hamburger__icon
-        use(xlink:href="img/sprite.svg#hamburger")
+      span.hamburger__layer.hamburger__layer_top
+      span.hamburger__layer.hamburger__layer_middle
+      span.hamburger__layer.hamburger__layer_bottom
     .hero__content    
       svg.hero__titleBg
         use(xlink:href="img/sprite.svg#portfolioHeader")

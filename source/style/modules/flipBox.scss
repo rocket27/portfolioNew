@@ -3,11 +3,12 @@
   height: 395px;
   position: relative;
   transform-style: preserve-3d;
-  transition-duration: 1.75s;
+  transition-duration: $flipAnimationDuration;
   &__card {
     display: flex;
     flex-direction: column;
     backface-visibility: hidden;
+    transform: rotateY(0deg);
     @extend %stretch;
     &_login {
       transform: rotateY(180deg);

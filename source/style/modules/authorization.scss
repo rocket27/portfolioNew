@@ -9,7 +9,7 @@
   color: $snowWhite;
   border: 1px solid $snowWhite;
   border-radius: $borderRadius;
-  transition: all .75s;
+  transition: all $flipAnimationDuration;
   &_hidden {
     opacity: 0;
     cursor: default;

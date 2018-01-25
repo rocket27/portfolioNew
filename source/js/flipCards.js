@@ -13,29 +13,20 @@ document.addEventListener('DOMContentLoaded', function() {
     autBtn.addEventListener('click', function(e) {
       e.preventDefault();
 
-      if (autBtn.classList.contains('authorization_hidden')) {
-        autBtn.classList.remove('authorization_hidden');
-      } else {
-        autBtn.classList.add('authorization_hidden');
-
-        flipBox.style.transform = "rotateY(180deg)";
-        userCard.classList.remove('flipBox__card_user_active');
-        loginCard.classList.add('flipBox__card_login_active');
-      }
+      autBtn.classList.add('authorization_hidden');
+      flipBox.style.transform = "rotateY(180deg)";
+      userCard.classList.remove('flipBox__card_user_active');
+      loginCard.classList.add('flipBox__card_login_active');
     })
 
     homeBtn.addEventListener('click', function(e) {
       e.preventDefault();
 
-      if (autBtn.classList.contains('authorization_hidden')) {
-        autBtn.classList.remove('authorization_hidden');
-      }
-
+      autBtn.classList.remove('authorization_hidden');
       flipBox.style.transform = "rotateY(0deg)";
       loginCard.classList.remove('flipBox__card_login_active');
       userCard.classList.add('flipBox__card_user_active');
     })
 
   }
-
 });

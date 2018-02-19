@@ -6,5 +6,6 @@ module.exports = [
   './source/js/scrollParallax.js',
   './source/js/flipCards.js',
   './source/js/parallax.js',
-  './source/js/googleMap.js'
+  './source/js/googleMap.js',
+  './source/js/slider.js'
 ];

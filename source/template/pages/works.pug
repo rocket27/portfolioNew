@@ -20,15 +20,52 @@ block content
               | образования
             .slider__technology HTML, SCC, JavaScript
             a.slider__projectLink(href="#") Посмотреть сайт
-        .slider__picture
-          img.slider__image(src="img/content/works/prjct_01.png")
-        .slider__buttons
-          a.slider__button(href="#" style="background-image: url('img/content/works/buttonImage_01.jpg')")
-            svg.slider__buttonIcon
-              use(xlink:href="img/sprite.svg#portfolioArrowDown")
-          a.slider__button(href="#" style="background-image: url('img/content/works/buttonImage_02.jpg')")
-            svg.slider__buttonIcon
-              use(xlink:href="img/sprite.svg#portfolioArrowUp")
+        //- .slider__description
+        //-   .slider__infoBlock
+        //-     h2.subtitle.slider__projectName
+        //-       each word in words
+        //-         each letterArray in word
+        //-           span.letterWord
+        //-             each letter in letterArray
+        //-               span.letter= `${letter}`
+        //-     .slider__technology HTML, SCC, JavaScript
+        //-     a.slider__projectLink(href="#") Посмотреть сайт
+        ul.sliderFigure
+          li.sliderFigure__item.sliderFigure__item_active
+            img.sliderFigure__image(src="img/content/works/prjct_02.png")
+          li.sliderFigure__item
+            img.sliderFigure__image(src="img/content/works/prjct_03.png")
+          li.sliderFigure__item
+            img.sliderFigure__image(src="img/content/works/prjct_04.png")
+          li.sliderFigure__item
+            img.sliderFigure__image(src="img/content/works/prjct_01.png")
+        .sliderControls
+          .sliderControl.sliderControl_slideDown
+            ul.sliderControl__list
+              li.sliderControl__item.sliderControl__item_active
+                img.sliderControl__image(src="img/content/works/prjct_01_min.png")
+              li.sliderControl__item
+                img.sliderControl__image(src="img/content/works/prjct_02_min.png")
+              li.sliderControl__item
+                img.sliderControl__image(src="img/content/works/prjct_03_min.png")
+              li.sliderControl__item
+                img.sliderControl__image(src="img/content/works/prjct_04_min.png")
+            a.sliderControl__button.sliderControl__button_down(href="#")
+              svg.sliderControl__buttonIcon
+                use(xlink:href="img/sprite.svg#portfolioArrowDown")
+          .sliderControl.sliderControl_slideUp
+            ul.sliderControl__list
+              li.sliderControl__item.sliderControl__item_active
+                img.sliderControl__image(src="img/content/works/prjct_03_min.png")
+              li.sliderControl__item
+                img.sliderControl__image(src="img/content/works/prjct_04_min.png")
+              li.sliderControl__item
+                img.sliderControl__image(src="img/content/works/prjct_01_min.png")
+              li.sliderControl__item
+                img.sliderControl__image(src="img/content/works/prjct_02_min.png")
+            a.sliderControl__button.sliderControl__button_up(href="#")
+              svg.sliderControl__buttonIcon
+                use(xlink:href="img/sprite.svg#portfolioArrowUp")
     section.section.reviews
       .reviews__container.container
         .reviews__title
@@ -71,5 +108,4 @@ block content
             li.box__menuItem
               button.box__menuButton(type="reset" form="feedbackForm") Очистить
         +scrollArrow('#', 'scrollArrow_reviews')
-    //- include ../common/footer
   include ../common/footer
